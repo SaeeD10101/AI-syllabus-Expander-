@@ -1,0 +1,10 @@
+module,learningOutcome,bloomLevel,assessmentTypes,questionIds,coverage
+Introduction to Stacks,Students will be able to implement stacks,Apply,"Labs/Assignments, Quizzes",Q-M1-002,Low
+Practical Real-World Examples,Students will be able to use real-world examples to solve problems,Apply,"Labs/Assignments, Quizzes",Q-M2-002,Low
+Practical Real-World Examples,Students will be able to compare different real-world examples,Analyze,"Labs/Assignments, Project","Q-M2-004, Q-M2-005",Low
+Practical Real-World Examples,Students will be able to define real-world examples,Remember,"Quizzes, Pre-Test",,None
+Implementing Fundamental Concepts,Students will be able to apply fundamental concepts to fundamental concepts,Apply,"Labs/Assignments, Quizzes","Q-M3-001, Q-M3-003",Low
+Applied Practical Security,Students will be able to explain practical security,Understand,"Quizzes, Pre-Test",,None
+Applied Practical Security,Students will be able to examine the components of practical security,Analyze,"Labs/Assignments, Project",Q-M4-005,Low
+Capstone Project: Skills,Students will be able to demonstrate skills,Apply,"Labs/Assignments, Quizzes",Q-M5-003,Low
+Capstone Project: Skills,Students will be able to justify decisions about skills,Evaluate,Project,Q-M5-005,Low

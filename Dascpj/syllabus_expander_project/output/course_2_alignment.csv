@@ -1,0 +1,13 @@
+module,learningOutcome,bloomLevel,assessmentTypes,questionIds,coverage
+Introduction to Engineering,Students will be able to identify key engineering,Remember,"Quizzes, Pre-Test",,None
+Practical Material Properties,Students will be able to use material properties to solve problems,Apply,"Labs/Assignments, Quizzes","Q-M2-001, Q-M2-003, Q-M2-004",Medium
+Practical Material Properties,Students will be able to summarize material properties,Understand,"Quizzes, Pre-Test",,None
+Practical Material Properties,Students will be able to list the main material properties,Remember,"Quizzes, Pre-Test",Q-M2-002,Low
+Practical Real-World Examples,Students will be able to implement real-world examples,Apply,"Labs/Assignments, Quizzes","Q-M3-001, Q-M3-002",Low
+Practical Real-World Examples,Students will be able to critique real-world examples,Evaluate,Project,,None
+Applied Heat Transfer,Students will be able to compare different heat transfer,Analyze,"Labs/Assignments, Project","Q-M4-004, Q-M4-005",Low
+Applied Heat Transfer,Students will be able to use heat transfer to solve problems,Apply,"Labs/Assignments, Quizzes",,None
+Applied Heat Transfer,Students will be able to critique heat transfer,Evaluate,Project,,None
+Capstone Project: Fundamental Concepts,Students will be able to apply fundamental concepts to fundamental concepts,Apply,"Labs/Assignments, Quizzes",Q-M5-002,Low
+Capstone Project: Fundamental Concepts,Students will be able to develop solutions using fundamental concepts,Create,Project,,None
+Capstone Project: Fundamental Concepts,Students will be able to differentiate between fundamental concepts,Analyze,"Labs/Assignments, Project","Q-M5-004, Q-M5-005",Low

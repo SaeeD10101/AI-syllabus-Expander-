@@ -1,0 +1,1091 @@
+{
+  "metadata": {
+    "courseTitle": "Web Development Fundamentals",
+    "description": "This course provides a comprehensive introduction to web development fundamentals. Students will learn fundamental concepts including database, development, optimization. The course covers algorithm, data with emphasis on practical security. Through hands-on exercises and real-world examples, students will develop skills in data and algorithm.",
+    "scope": "Topics covered include: trees, queues, linked lists, and stacks. Students should have basic knowledge of database. Prerequisites: None or introductory computer science course.",
+    "duration": "15 weeks",
+    "generated_date": "2025-11-13 22:50:24"
+  },
+  "modules": [
+    {
+      "id": 1,
+      "title": "Introduction to Stacks",
+      "subtopics": [
+        "stacks",
+        "emphasis",
+        "hands-on exercises"
+      ],
+      "keywords": [
+        "stacks",
+        "emphasis",
+        "hands-on exercises"
+      ],
+      "hours": 9,
+      "description": "This module covers stacks, emphasis, hands-on exercises, providing a comprehensive understanding of stacks.",
+      "learningOutcomes": [
+        {
+          "outcome": "Students will be able to implement stacks",
+          "bloomLevel": "Apply",
+          "bloomTier": "Cognitive",
+          "module_context": "stacks"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Practical Real-World Examples",
+      "subtopics": [
+        "real-world examples",
+        "web development fundamentals",
+        "topics"
+      ],
+      "keywords": [
+        "real-world examples",
+        "web development fundamentals",
+        "topics"
+      ],
+      "hours": 9,
+      "description": "This module covers real-world examples, web development fundamentals, topics, providing a comprehensive understanding of real-world examples.",
+      "learningOutcomes": [
+        {
+          "outcome": "Students will be able to use real-world examples to solve problems",
+          "bloomLevel": "Apply",
+          "bloomTier": "Cognitive",
+          "module_context": "real-world examples"
+        },
+        {
+          "outcome": "Students will be able to compare different real-world examples",
+          "bloomLevel": "Analyze",
+          "bloomTier": "Cognitive",
+          "module_context": "real-world examples"
+        },
+        {
+          "outcome": "Students will be able to define real-world examples",
+          "bloomLevel": "Remember",
+          "bloomTier": "Cognitive",
+          "module_context": "real-world examples"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Implementing Fundamental Concepts",
+      "subtopics": [
+        "fundamental concepts",
+        "the course",
+        "queues"
+      ],
+      "keywords": [
+        "fundamental concepts",
+        "the course",
+        "queues"
+      ],
+      "hours": 9,
+      "description": "This module covers fundamental concepts, the course, queues, providing a comprehensive understanding of fundamental concepts.",
+      "learningOutcomes": [
+        {
+          "outcome": "Students will be able to apply fundamental concepts to fundamental concepts",
+          "bloomLevel": "Apply",
+          "bloomTier": "Cognitive",
+          "module_context": "fundamental concepts"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Applied Practical Security",
+      "subtopics": [
+        "practical security",
+        "prerequisites",
+        "trees"
+      ],
+      "keywords": [
+        "practical security",
+        "prerequisites",
+        "trees"
+      ],
+      "hours": 9,
+      "description": "This module covers practical security, prerequisites, trees, providing a comprehensive understanding of practical security.",
+      "learningOutcomes": [
+        {
+          "outcome": "Students will be able to explain practical security",
+          "bloomLevel": "Understand",
+          "bloomTier": "Cognitive",
+          "module_context": "practical security"
+        },
+        {
+          "outcome": "Students will be able to examine the components of practical security",
+          "bloomLevel": "Analyze",
+          "bloomTier": "Cognitive",
+          "module_context": "practical security"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Capstone Project: Skills",
+      "subtopics": [
+        "skills",
+        "development",
+        "data"
+      ],
+      "keywords": [
+        "skills",
+        "development",
+        "data"
+      ],
+      "hours": 9,
+      "description": "This module covers skills, development, data, providing a comprehensive understanding of skills.",
+      "learningOutcomes": [
+        {
+          "outcome": "Students will be able to demonstrate skills",
+          "bloomLevel": "Apply",
+          "bloomTier": "Cognitive",
+          "module_context": "skills"
+        },
+        {
+          "outcome": "Students will be able to justify decisions about skills",
+          "bloomLevel": "Evaluate",
+          "bloomTier": "Cognitive",
+          "module_context": "skills"
+        }
+      ]
+    }
+  ],
+  "courseType": "technical",
+  "totalHours": 45,
+  "courseLearningOutcomes": [
+    {
+      "id": "CLO-1",
+      "outcome": "Students will be able to summarize web development fundamentals",
+      "bloomLevel": "Understand",
+      "bloomTier": "Cognitive",
+      "mappedModules": [
+        4
+      ]
+    },
+    {
+      "id": "CLO-2",
+      "outcome": "Students will be able to apply web development fundamentals to practical web development fundamentals scenarios",
+      "bloomLevel": "Apply",
+      "bloomTier": "Cognitive",
+      "mappedModules": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "CLO-3",
+      "outcome": "Students will be able to use web development fundamentals to solve problems",
+      "bloomLevel": "Apply",
+      "bloomTier": "Cognitive",
+      "mappedModules": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "CLO-4",
+      "outcome": "Students will be able to examine the components of web development fundamentals",
+      "bloomLevel": "Analyze",
+      "bloomTier": "Cognitive",
+      "mappedModules": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": "CLO-5",
+      "outcome": "Students will be able to examine the components of web development fundamentals",
+      "bloomLevel": "Analyze",
+      "bloomTier": "Cognitive",
+      "mappedModules": [
+        2,
+        4
+      ]
+    },
+    {
+      "id": "CLO-6",
+      "outcome": "Students will be able to critique web development fundamentals",
+      "bloomLevel": "Evaluate",
+      "bloomTier": "Cognitive",
+      "mappedModules": [
+        5
+      ]
+    }
+  ],
+  "bloomStatistics": {
+    "module_level": {
+      "counts": {
+        "Remember": 1,
+        "Understand": 1,
+        "Apply": 4,
+        "Analyze": 2,
+        "Evaluate": 1,
+        "Create": 0
+      },
+      "percentages": {
+        "Remember": 11.1,
+        "Understand": 11.1,
+        "Apply": 44.4,
+        "Analyze": 22.2,
+        "Evaluate": 11.1,
+        "Create": 0.0
+      },
+      "total": 9
+    },
+    "course_level": {
+      "counts": {
+        "Remember": 0,
+        "Understand": 1,
+        "Apply": 2,
+        "Analyze": 2,
+        "Evaluate": 1,
+        "Create": 0
+      },
+      "percentages": {
+        "Remember": 0.0,
+        "Understand": 16.7,
+        "Apply": 33.3,
+        "Analyze": 33.3,
+        "Evaluate": 16.7,
+        "Create": 0.0
+      },
+      "total": 6
+    }
+  },
+  "assessmentBlueprint": {
+    "totalWeight": 100,
+    "components": [
+      {
+        "type": "Labs/Assignments",
+        "weight": 39,
+        "description": "Hands-on practical exercises. Focus on coding exercises and algorithm implementation.",
+        "timing": "Weekly (Weeks 2-15)",
+        "format": "Practical work, problem sets",
+        "linkedLOs": [
+          "CLO-2",
+          "CLO-3",
+          "CLO-4",
+          "CLO-5"
+        ],
+        "linkedModuleLOs": [
+          "M1-LO1",
+          "M2-LO2",
+          "M2-LO3",
+          "M3-LO4",
+          "M4-LO5",
+          "M5-LO6"
+        ],
+        "bloomLevels": [
+          "Apply",
+          "Analyze"
+        ]
+      },
+      {
+        "type": "Quizzes",
+        "weight": 25,
+        "description": "Regular assessments of module comprehension",
+        "timing": "Weekly (Weeks 2-15)",
+        "format": "Mixed: MCQ, short answer",
+        "linkedLOs": [
+          "CLO-1",
+          "CLO-2",
+          "CLO-3"
+        ],
+        "linkedModuleLOs": [
+          "M1-LO1",
+          "M2-LO2",
+          "M2-LO3",
+          "M3-LO4",
+          "M4-LO5",
+          "M5-LO6"
+        ],
+        "bloomLevels": [
+          "Remember",
+          "Understand",
+          "Apply"
+        ]
+      },
+      {
+        "type": "Project",
+        "weight": 18,
+        "description": "Comprehensive project synthesizing course concepts. Build a complete application demonstrating course concepts.",
+        "timing": "Weeks 3-6",
+        "format": "Project deliverable + documentation",
+        "linkedLOs": [
+          "CLO-4",
+          "CLO-5",
+          "CLO-6"
+        ],
+        "linkedModuleLOs": [
+          "M2-LO1",
+          "M4-LO2",
+          "M5-LO3"
+        ],
+        "bloomLevels": [
+          "Analyze",
+          "Evaluate",
+          "Create"
+        ]
+      },
+      {
+        "type": "Final Exam",
+        "weight": 12,
+        "description": "Comprehensive final assessment",
+        "timing": "Final Week",
+        "format": "Comprehensive exam",
+        "linkedLOs": [],
+        "linkedModuleLOs": [],
+        "bloomLevels": [
+          "All levels"
+        ]
+      },
+      {
+        "type": "Pre-Test",
+        "weight": 6,
+        "description": "Diagnostic assessment to gauge prior knowledge",
+        "timing": "Week 1",
+        "format": "Multiple choice, True/False",
+        "linkedLOs": [
+          "CLO-1"
+        ],
+        "linkedModuleLOs": [
+          "M2-LO1",
+          "M4-LO2"
+        ],
+        "bloomLevels": [
+          "Remember",
+          "Understand"
+        ]
+      }
+    ],
+    "gradingScale": {
+      "A": "90-100%",
+      "B": "80-89%",
+      "C": "70-79%",
+      "D": "60-69%",
+      "F": "Below 60%"
+    },
+    "recommendations": [
+      "Assessment blueprint is well-balanced for this course type."
+    ]
+  },
+  "assessmentAnalysis": {
+    "quality_score": 112.0,
+    "bloom_coverage": {
+      "assessed_blooms": [
+        "Remember",
+        "All levels",
+        "Apply",
+        "Understand",
+        "Create",
+        "Analyze",
+        "Evaluate"
+      ],
+      "outcome_blooms": [
+        "Remember",
+        "Apply",
+        "Understand",
+        "Analyze",
+        "Evaluate"
+      ],
+      "uncovered_blooms": [],
+      "coverage_percentage": 140.0
+    },
+    "outcome_alignment": {
+      "total_outcomes": 15,
+      "assessed_outcomes": 15,
+      "unassessed_outcomes": [
+        "M4-LO1",
+        "M3-LO1",
+        "M5-LO1",
+        "M5-LO2"
+      ],
+      "coverage_percentage": 100.0
+    },
+    "weight_distribution": {
+      "issues": [],
+      "warnings": [
+        "Labs/Assignments has high weight (39%). Ensure students have adequate preparation."
+      ],
+      "continuous_weight": 64,
+      "high_stakes_weight": 12
+    },
+    "timing": {
+      "warnings": [],
+      "assessment_count": 5
+    },
+    "overall_grade": "Excellent"
+  },
+  "sampleQuestions": [
+    {
+      "type": "MCQ",
+      "bloomLevel": "Understand",
+      "difficulty": "Easy",
+      "question": "Explain the relationship between stacks and emphasis.",
+      "options": [
+        "A) Stacks serves as the primary mechanism for data processing",
+        "B) It provides a framework for implementing stacks",
+        "C) Stacks enables systematic analysis and evaluation",
+        "D) It represents an alternative approach to stacks"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Option B is correct because it accurately describes stacks.",
+      "estimatedTime": "2 minutes",
+      "tags": [
+        "stacks",
+        "understand"
+      ],
+      "id": "Q-M1-001",
+      "moduleId": 1
+    },
+    {
+      "type": "MCQ",
+      "bloomLevel": "Apply",
+      "difficulty": "Medium",
+      "question": "What is the primary purpose of stacks?",
+      "options": [
+        "A) Stacks serves as the primary mechanism for data processing",
+        "B) It provides a framework for implementing stacks",
+        "C) Stacks enables systematic analysis and evaluation",
+        "D) It represents an alternative approach to stacks"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Option D is correct because it accurately describes stacks.",
+      "estimatedTime": "3 minutes",
+      "tags": [
+        "stacks",
+        "apply"
+      ],
+      "id": "Q-M1-002",
+      "moduleId": 1
+    },
+    {
+      "type": "MCQ",
+      "bloomLevel": "Understand",
+      "difficulty": "Easy",
+      "question": "Describe how introduction to stacks works.",
+      "options": [
+        "A) Stacks serves as the primary mechanism for data processing",
+        "B) It provides a framework for implementing stacks",
+        "C) Stacks enables systematic analysis and evaluation",
+        "D) It represents an alternative approach to stacks"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Option D is correct because it accurately describes stacks.",
+      "estimatedTime": "2 minutes",
+      "tags": [
+        "stacks",
+        "understand"
+      ],
+      "id": "Q-M1-003",
+      "moduleId": 1
+    },
+    {
+      "type": "Short Answer",
+      "bloomLevel": "Analyze",
+      "difficulty": "Medium",
+      "question": "Analyze the factors that influence introduction to stacks.",
+      "rubric": {
+        "Excellent (9-10 pts)": "Sophisticated analysis with strong justification",
+        "Good (7-8 pts)": "Solid understanding with reasonable justification",
+        "Adequate (5-6 pts)": "Basic application with limited depth",
+        "Poor (0-4 pts)": "Superficial or incorrect application"
+      },
+      "sampleAnswer": "A comprehensive answer should address the key principles of stacks, demonstrate understanding of its applications, and provide relevant examples.",
+      "estimatedTime": "18 minutes",
+      "tags": [
+        "stacks",
+        "analyze",
+        "written-response"
+      ],
+      "id": "Q-M1-004",
+      "moduleId": 1
+    },
+    {
+      "type": "Case Study",
+      "bloomLevel": "Evaluate",
+      "difficulty": "Hard",
+      "scenario": "A company is implementing introduction to stacks to improve their operations. They face challenges with stacks. Current metrics show suboptimal performance in key areas.",
+      "question": "Analyze the scenario and evaluate the effectiveness of their introduction to stacks approach. What improvements would you recommend?",
+      "rubric": {
+        "Analysis (30%)": "Depth of problem analysis and identification of key issues",
+        "Solution Quality (40%)": "Effectiveness and feasibility of proposed solution",
+        "Justification (20%)": "Quality of reasoning and evidence provided",
+        "Presentation (10%)": "Clarity and organization of response"
+      },
+      "estimatedTime": "30-45 minutes",
+      "tags": [
+        "introduction to stacks",
+        "evaluate",
+        "case-study",
+        "applied"
+      ],
+      "id": "Q-M1-005",
+      "moduleId": 1
+    },
+    {
+      "type": "MCQ",
+      "bloomLevel": "Understand",
+      "difficulty": "Easy",
+      "question": "Explain the relationship between real-world examples and web development fundamentals.",
+      "options": [
+        "A) Real-World Examples serves as the primary mechanism for data processing",
+        "B) It provides a framework for implementing real-world examples",
+        "C) Real-World Examples enables systematic analysis and evaluation",
+        "D) It represents an alternative approach to real-world examples"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Option B is correct because it accurately describes real-world examples.",
+      "estimatedTime": "2 minutes",
+      "tags": [
+        "real-world examples",
+        "understand"
+      ],
+      "id": "Q-M2-001",
+      "moduleId": 2
+    },
+    {
+      "type": "MCQ",
+      "bloomLevel": "Apply",
+      "difficulty": "Medium",
+      "question": "What is the primary purpose of real-world examples?",
+      "options": [
+        "A) Real-World Examples serves as the primary mechanism for data processing",
+        "B) It provides a framework for implementing real-world examples",
+        "C) Real-World Examples enables systematic analysis and evaluation",
+        "D) It represents an alternative approach to real-world examples"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Option D is correct because it accurately describes real-world examples.",
+      "estimatedTime": "3 minutes",
+      "tags": [
+        "real-world examples",
+        "apply"
+      ],
+      "id": "Q-M2-002",
+      "moduleId": 2
+    },
+    {
+      "type": "MCQ",
+      "bloomLevel": "Understand",
+      "difficulty": "Easy",
+      "question": "Describe how practical real-world examples works.",
+      "options": [
+        "A) Real-World Examples serves as the primary mechanism for data processing",
+        "B) It provides a framework for implementing real-world examples",
+        "C) Real-World Examples enables systematic analysis and evaluation",
+        "D) It represents an alternative approach to real-world examples"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Option C is correct because it accurately describes real-world examples.",
+      "estimatedTime": "2 minutes",
+      "tags": [
+        "real-world examples",
+        "understand"
+      ],
+      "id": "Q-M2-003",
+      "moduleId": 2
+    },
+    {
+      "type": "Short Answer",
+      "bloomLevel": "Analyze",
+      "difficulty": "Medium",
+      "question": "Compare and contrast real-world examples with web development fundamentals.",
+      "rubric": {
+        "Excellent (9-10 pts)": "Sophisticated analysis with strong justification",
+        "Good (7-8 pts)": "Solid understanding with reasonable justification",
+        "Adequate (5-6 pts)": "Basic application with limited depth",
+        "Poor (0-4 pts)": "Superficial or incorrect application"
+      },
+      "sampleAnswer": "A comprehensive answer should address the key principles of real-world examples, demonstrate understanding of its applications, and provide relevant examples.",
+      "estimatedTime": "18 minutes",
+      "tags": [
+        "real-world examples",
+        "analyze",
+        "written-response"
+      ],
+      "id": "Q-M2-004",
+      "moduleId": 2
+    },
+    {
+      "type": "Case Study",
+      "bloomLevel": "Analyze",
+      "difficulty": "Hard",
+      "scenario": "A company is implementing practical real-world examples to improve their operations. They face challenges with real-world examples. Current metrics show suboptimal performance in key areas.",
+      "question": "Analyze the scenario and evaluate the effectiveness of their practical real-world examples approach. What improvements would you recommend?",
+      "rubric": {
+        "Analysis (30%)": "Depth of problem analysis and identification of key issues",
+        "Solution Quality (40%)": "Effectiveness and feasibility of proposed solution",
+        "Justification (20%)": "Quality of reasoning and evidence provided",
+        "Presentation (10%)": "Clarity and organization of response"
+      },
+      "estimatedTime": "30-45 minutes",
+      "tags": [
+        "practical real-world examples",
+        "analyze",
+        "case-study",
+        "applied"
+      ],
+      "id": "Q-M2-005",
+      "moduleId": 2
+    },
+    {
+      "type": "MCQ",
+      "bloomLevel": "Apply",
+      "difficulty": "Medium",
+      "question": "What is the primary purpose of fundamental concepts?",
+      "options": [
+        "A) Fundamental Concepts serves as the primary mechanism for data processing",
+        "B) It provides a framework for implementing fundamental concepts",
+        "C) Fundamental Concepts enables systematic analysis and evaluation",
+        "D) It represents an alternative approach to fundamental concepts"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Option A is correct because it accurately describes fundamental concepts.",
+      "estimatedTime": "3 minutes",
+      "tags": [
+        "fundamental concepts",
+        "apply"
+      ],
+      "id": "Q-M3-001",
+      "moduleId": 3
+    },
+    {
+      "type": "MCQ",
+      "bloomLevel": "Understand",
+      "difficulty": "Easy",
+      "question": "Describe how implementing fundamental concepts works.",
+      "options": [
+        "A) Fundamental Concepts serves as the primary mechanism for data processing",
+        "B) It provides a framework for implementing fundamental concepts",
+        "C) Fundamental Concepts enables systematic analysis and evaluation",
+        "D) It represents an alternative approach to fundamental concepts"
+      ],
+      "correctAnswer": "A",
+      "explanation": "Option A is correct because it accurately describes fundamental concepts.",
+      "estimatedTime": "2 minutes",
+      "tags": [
+        "fundamental concepts",
+        "understand"
+      ],
+      "id": "Q-M3-002",
+      "moduleId": 3
+    },
+    {
+      "type": "MCQ",
+      "bloomLevel": "Apply",
+      "difficulty": "Medium",
+      "question": "What is the primary purpose of fundamental concepts?",
+      "options": [
+        "A) Fundamental Concepts serves as the primary mechanism for data processing",
+        "B) It provides a framework for implementing fundamental concepts",
+        "C) Fundamental Concepts enables systematic analysis and evaluation",
+        "D) It represents an alternative approach to fundamental concepts"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Option D is correct because it accurately describes fundamental concepts.",
+      "estimatedTime": "3 minutes",
+      "tags": [
+        "fundamental concepts",
+        "apply"
+      ],
+      "id": "Q-M3-003",
+      "moduleId": 3
+    },
+    {
+      "type": "Short Answer",
+      "bloomLevel": "Analyze",
+      "difficulty": "Medium",
+      "question": "Differentiate between fundamental concepts and course.",
+      "rubric": {
+        "Excellent (9-10 pts)": "Sophisticated analysis with strong justification",
+        "Good (7-8 pts)": "Solid understanding with reasonable justification",
+        "Adequate (5-6 pts)": "Basic application with limited depth",
+        "Poor (0-4 pts)": "Superficial or incorrect application"
+      },
+      "sampleAnswer": "A comprehensive answer should address the key principles of fundamental concepts, demonstrate understanding of its applications, and provide relevant examples.",
+      "estimatedTime": "18 minutes",
+      "tags": [
+        "fundamental concepts",
+        "analyze",
+        "written-response"
+      ],
+      "id": "Q-M3-004",
+      "moduleId": 3
+    },
+    {
+      "type": "Case Study",
+      "bloomLevel": "Analyze",
+      "difficulty": "Hard",
+      "scenario": "A company is implementing implementing fundamental concepts to improve their operations. They face challenges with fundamental concepts. Current metrics show suboptimal performance in key areas.",
+      "question": "Analyze the scenario and evaluate the effectiveness of their implementing fundamental concepts approach. What improvements would you recommend?",
+      "rubric": {
+        "Analysis (30%)": "Depth of problem analysis and identification of key issues",
+        "Solution Quality (40%)": "Effectiveness and feasibility of proposed solution",
+        "Justification (20%)": "Quality of reasoning and evidence provided",
+        "Presentation (10%)": "Clarity and organization of response"
+      },
+      "estimatedTime": "30-45 minutes",
+      "tags": [
+        "implementing fundamental concepts",
+        "analyze",
+        "case-study",
+        "applied"
+      ],
+      "id": "Q-M3-005",
+      "moduleId": 3
+    },
+    {
+      "type": "MCQ",
+      "bloomLevel": "Apply",
+      "difficulty": "Medium",
+      "question": "What is the primary purpose of practical security?",
+      "options": [
+        "A) Practical Security serves as the primary mechanism for data processing",
+        "B) It provides a framework for implementing practical security",
+        "C) Practical Security enables systematic analysis and evaluation",
+        "D) It represents an alternative approach to practical security"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Option B is correct because it accurately describes practical security.",
+      "estimatedTime": "3 minutes",
+      "tags": [
+        "practical security",
+        "apply"
+      ],
+      "id": "Q-M4-001",
+      "moduleId": 4
+    },
+    {
+      "type": "MCQ",
+      "bloomLevel": "Remember",
+      "difficulty": "Easy",
+      "question": "What is the definition of applied practical security?",
+      "options": [
+        "A) Practical Security serves as the primary mechanism for data processing",
+        "B) It provides a framework for implementing practical security",
+        "C) Practical Security enables systematic analysis and evaluation",
+        "D) It represents an alternative approach to practical security"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Option C is correct because it accurately describes practical security.",
+      "estimatedTime": "2 minutes",
+      "tags": [
+        "practical security",
+        "remember"
+      ],
+      "id": "Q-M4-002",
+      "moduleId": 4
+    },
+    {
+      "type": "MCQ",
+      "bloomLevel": "Remember",
+      "difficulty": "Easy",
+      "question": "Identify the main components of applied practical security.",
+      "options": [
+        "A) Practical Security serves as the primary mechanism for data processing",
+        "B) It provides a framework for implementing practical security",
+        "C) Practical Security enables systematic analysis and evaluation",
+        "D) It represents an alternative approach to practical security"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Option C is correct because it accurately describes practical security.",
+      "estimatedTime": "2 minutes",
+      "tags": [
+        "practical security",
+        "remember"
+      ],
+      "id": "Q-M4-003",
+      "moduleId": 4
+    },
+    {
+      "type": "Short Answer",
+      "bloomLevel": "Apply",
+      "difficulty": "Medium",
+      "question": "Explain how practical security works in practice.",
+      "rubric": {
+        "Excellent (9-10 pts)": "Sophisticated analysis with strong justification",
+        "Good (7-8 pts)": "Solid understanding with reasonable justification",
+        "Adequate (5-6 pts)": "Basic application with limited depth",
+        "Poor (0-4 pts)": "Superficial or incorrect application"
+      },
+      "sampleAnswer": "A comprehensive answer should address the key principles of practical security, demonstrate understanding of its applications, and provide relevant examples.",
+      "estimatedTime": "15 minutes",
+      "tags": [
+        "practical security",
+        "apply",
+        "written-response"
+      ],
+      "id": "Q-M4-004",
+      "moduleId": 4
+    },
+    {
+      "type": "Case Study",
+      "bloomLevel": "Analyze",
+      "difficulty": "Hard",
+      "scenario": "A company is implementing applied practical security to improve their operations. They face challenges with practical security. Current metrics show suboptimal performance in key areas.",
+      "question": "Analyze the scenario and evaluate the effectiveness of their applied practical security approach. What improvements would you recommend?",
+      "rubric": {
+        "Analysis (30%)": "Depth of problem analysis and identification of key issues",
+        "Solution Quality (40%)": "Effectiveness and feasibility of proposed solution",
+        "Justification (20%)": "Quality of reasoning and evidence provided",
+        "Presentation (10%)": "Clarity and organization of response"
+      },
+      "estimatedTime": "30-45 minutes",
+      "tags": [
+        "applied practical security",
+        "analyze",
+        "case-study",
+        "applied"
+      ],
+      "id": "Q-M4-005",
+      "moduleId": 4
+    },
+    {
+      "type": "MCQ",
+      "bloomLevel": "Remember",
+      "difficulty": "Easy",
+      "question": "List the key features of capstone project: skills.",
+      "options": [
+        "A) Skills serves as the primary mechanism for data processing",
+        "B) It provides a framework for implementing skills",
+        "C) Skills enables systematic analysis and evaluation",
+        "D) It represents an alternative approach to skills"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Option C is correct because it accurately describes skills.",
+      "estimatedTime": "2 minutes",
+      "tags": [
+        "skills",
+        "remember"
+      ],
+      "id": "Q-M5-001",
+      "moduleId": 5
+    },
+    {
+      "type": "MCQ",
+      "bloomLevel": "Remember",
+      "difficulty": "Easy",
+      "question": "Identify the main components of capstone project: skills.",
+      "options": [
+        "A) Skills serves as the primary mechanism for data processing",
+        "B) It provides a framework for implementing skills",
+        "C) Skills enables systematic analysis and evaluation",
+        "D) It represents an alternative approach to skills"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Option D is correct because it accurately describes skills.",
+      "estimatedTime": "2 minutes",
+      "tags": [
+        "skills",
+        "remember"
+      ],
+      "id": "Q-M5-002",
+      "moduleId": 5
+    },
+    {
+      "type": "MCQ",
+      "bloomLevel": "Apply",
+      "difficulty": "Medium",
+      "question": "What is the primary purpose of skills?",
+      "options": [
+        "A) Skills serves as the primary mechanism for data processing",
+        "B) It provides a framework for implementing skills",
+        "C) Skills enables systematic analysis and evaluation",
+        "D) It represents an alternative approach to skills"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Option D is correct because it accurately describes skills.",
+      "estimatedTime": "3 minutes",
+      "tags": [
+        "skills",
+        "apply"
+      ],
+      "id": "Q-M5-003",
+      "moduleId": 5
+    },
+    {
+      "type": "Short Answer",
+      "bloomLevel": "Analyze",
+      "difficulty": "Medium",
+      "question": "Examine the relationship between skills and development.",
+      "rubric": {
+        "Excellent (9-10 pts)": "Sophisticated analysis with strong justification",
+        "Good (7-8 pts)": "Solid understanding with reasonable justification",
+        "Adequate (5-6 pts)": "Basic application with limited depth",
+        "Poor (0-4 pts)": "Superficial or incorrect application"
+      },
+      "sampleAnswer": "A comprehensive answer should address the key principles of skills, demonstrate understanding of its applications, and provide relevant examples.",
+      "estimatedTime": "18 minutes",
+      "tags": [
+        "skills",
+        "analyze",
+        "written-response"
+      ],
+      "id": "Q-M5-004",
+      "moduleId": 5
+    },
+    {
+      "type": "Case Study",
+      "bloomLevel": "Evaluate",
+      "difficulty": "Hard",
+      "scenario": "A company is implementing capstone project: skills to improve their operations. They face challenges with skills. Current metrics show suboptimal performance in key areas.",
+      "question": "Analyze the scenario and evaluate the effectiveness of their capstone project: skills approach. What improvements would you recommend?",
+      "rubric": {
+        "Analysis (30%)": "Depth of problem analysis and identification of key issues",
+        "Solution Quality (40%)": "Effectiveness and feasibility of proposed solution",
+        "Justification (20%)": "Quality of reasoning and evidence provided",
+        "Presentation (10%)": "Clarity and organization of response"
+      },
+      "estimatedTime": "30-45 minutes",
+      "tags": [
+        "capstone project: skills",
+        "evaluate",
+        "case-study",
+        "applied"
+      ],
+      "id": "Q-M5-005",
+      "moduleId": 5
+    }
+  ],
+  "alignmentMatrix": [
+    {
+      "moduleId": 1,
+      "module": "Introduction to Stacks",
+      "learningOutcome": "Students will be able to implement stacks",
+      "learningOutcomeId": "M1-LO1",
+      "bloomLevel": "Apply",
+      "assessmentTypes": [
+        "Labs/Assignments",
+        "Quizzes"
+      ],
+      "questionIds": [
+        "Q-M1-002"
+      ],
+      "coverage": "Low"
+    },
+    {
+      "moduleId": 2,
+      "module": "Practical Real-World Examples",
+      "learningOutcome": "Students will be able to use real-world examples to solve problems",
+      "learningOutcomeId": "M2-LO1",
+      "bloomLevel": "Apply",
+      "assessmentTypes": [
+        "Labs/Assignments",
+        "Quizzes"
+      ],
+      "questionIds": [
+        "Q-M2-002"
+      ],
+      "coverage": "Low"
+    },
+    {
+      "moduleId": 2,
+      "module": "Practical Real-World Examples",
+      "learningOutcome": "Students will be able to compare different real-world examples",
+      "learningOutcomeId": "M2-LO2",
+      "bloomLevel": "Analyze",
+      "assessmentTypes": [
+        "Labs/Assignments",
+        "Project"
+      ],
+      "questionIds": [
+        "Q-M2-004",
+        "Q-M2-005"
+      ],
+      "coverage": "Low"
+    },
+    {
+      "moduleId": 2,
+      "module": "Practical Real-World Examples",
+      "learningOutcome": "Students will be able to define real-world examples",
+      "learningOutcomeId": "M2-LO3",
+      "bloomLevel": "Remember",
+      "assessmentTypes": [
+        "Quizzes",
+        "Pre-Test"
+      ],
+      "questionIds": [],
+      "coverage": "None"
+    },
+    {
+      "moduleId": 3,
+      "module": "Implementing Fundamental Concepts",
+      "learningOutcome": "Students will be able to apply fundamental concepts to fundamental concepts",
+      "learningOutcomeId": "M3-LO1",
+      "bloomLevel": "Apply",
+      "assessmentTypes": [
+        "Labs/Assignments",
+        "Quizzes"
+      ],
+      "questionIds": [
+        "Q-M3-001",
+        "Q-M3-003"
+      ],
+      "coverage": "Low"
+    },
+    {
+      "moduleId": 4,
+      "module": "Applied Practical Security",
+      "learningOutcome": "Students will be able to explain practical security",
+      "learningOutcomeId": "M4-LO1",
+      "bloomLevel": "Understand",
+      "assessmentTypes": [
+        "Quizzes",
+        "Pre-Test"
+      ],
+      "questionIds": [],
+      "coverage": "None"
+    },
+    {
+      "moduleId": 4,
+      "module": "Applied Practical Security",
+      "learningOutcome": "Students will be able to examine the components of practical security",
+      "learningOutcomeId": "M4-LO2",
+      "bloomLevel": "Analyze",
+      "assessmentTypes": [
+        "Labs/Assignments",
+        "Project"
+      ],
+      "questionIds": [
+        "Q-M4-005"
+      ],
+      "coverage": "Low"
+    },
+    {
+      "moduleId": 5,
+      "module": "Capstone Project: Skills",
+      "learningOutcome": "Students will be able to demonstrate skills",
+      "learningOutcomeId": "M5-LO1",
+      "bloomLevel": "Apply",
+      "assessmentTypes": [
+        "Labs/Assignments",
+        "Quizzes"
+      ],
+      "questionIds": [
+        "Q-M5-003"
+      ],
+      "coverage": "Low"
+    },
+    {
+      "moduleId": 5,
+      "module": "Capstone Project: Skills",
+      "learningOutcome": "Students will be able to justify decisions about skills",
+      "learningOutcomeId": "M5-LO2",
+      "bloomLevel": "Evaluate",
+      "assessmentTypes": [
+        "Project"
+      ],
+      "questionIds": [
+        "Q-M5-005"
+      ],
+      "coverage": "Low"
+    }
+  ]
+}

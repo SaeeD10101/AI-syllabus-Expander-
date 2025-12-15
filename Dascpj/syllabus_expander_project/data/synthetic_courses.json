@@ -1,0 +1,302 @@
+[
+  {
+    "id": "COURSE_001",
+    "domain": "Computer Science",
+    "title": "Web Development Fundamentals",
+    "description": "This course provides a comprehensive introduction to web development fundamentals. Students will learn fundamental concepts including database, development, optimization. The course covers algorithm, data with emphasis on practical security. Through hands-on exercises and real-world examples, students will develop skills in data and algorithm.",
+    "scope": "Topics covered include: trees, queues, linked lists, and stacks. Students should have basic knowledge of database. Prerequisites: None or introductory computer science course.",
+    "duration": "15 weeks",
+    "credit_hours": 4,
+    "level": "Professional"
+  },
+  {
+    "id": "COURSE_002",
+    "domain": "Engineering",
+    "title": "Fluid Mechanics",
+    "description": "This course provides a comprehensive introduction to fluid mechanics. Students will learn fundamental concepts including engineering, measurement, process. The course covers system, optimization with emphasis on practical optimization. Through hands-on exercises and real-world examples, students will develop skills in system and process.",
+    "scope": "Topics covered include: heat transfer, electrical circuits, mechanical systems, and material properties. Students should have basic knowledge of application. Prerequisites: None or introductory engineering course.",
+    "duration": "12 weeks",
+    "credit_hours": 4,
+    "level": "Undergraduate"
+  },
+  {
+    "id": "COURSE_003",
+    "domain": "Education",
+    "title": "Curriculum Design",
+    "description": "This course provides a comprehensive introduction to curriculum design. Students will learn fundamental concepts including learning, education, instruction. The course covers development, evaluation with emphasis on practical evaluation. Through hands-on exercises and real-world examples, students will develop skills in development and instruction.",
+    "scope": "Topics covered include: formative assessment, assessment design, differentiated instruction, and behavior management. Students should have basic knowledge of development. Prerequisites: None or introductory education course.",
+    "duration": "8 weeks",
+    "credit_hours": 4,
+    "level": "Undergraduate"
+  },
+  {
+    "id": "COURSE_004",
+    "domain": "Business",
+    "title": "Financial Accounting Basics",
+    "description": "This course provides a comprehensive introduction to financial accounting basics. Students will learn fundamental concepts including decision, leadership, profit. The course covers analysis, value with emphasis on practical marketing. Through hands-on exercises and real-world examples, students will develop skills in innovation and operations.",
+    "scope": "Topics covered include: supply chain, business models, market research, and stakeholder management. Students should have basic knowledge of finance. Prerequisites: None or introductory business course.",
+    "duration": "10 weeks",
+    "credit_hours": 3,
+    "level": "Professional"
+  },
+  {
+    "id": "COURSE_005",
+    "domain": "Business",
+    "title": "Entrepreneurship",
+    "description": "This course provides a comprehensive introduction to entrepreneurship. Students will learn fundamental concepts including marketing, leadership, profit. The course covers decision, customer with emphasis on practical performance. Through hands-on exercises and real-world examples, students will develop skills in management and customer.",
+    "scope": "Topics covered include: budgeting, strategic planning, team dynamics, and market research. Students should have basic knowledge of innovation. Prerequisites: None or introductory business course.",
+    "duration": "12 weeks",
+    "credit_hours": 4,
+    "level": "Undergraduate"
+  },
+  {
+    "id": "COURSE_006",
+    "domain": "Engineering",
+    "title": "Engineering Mathematics",
+    "description": "This course provides a comprehensive introduction to engineering mathematics. Students will learn fundamental concepts including calculation, simulation, design. The course covers optimization, system with emphasis on practical measurement. Through hands-on exercises and real-world examples, students will develop skills in engineering and performance.",
+    "scope": "Topics covered include: force dynamics, stress analysis, material properties, and efficiency. Students should have basic knowledge of application. Prerequisites: None or introductory engineering course.",
+    "duration": "12 weeks",
+    "credit_hours": 3,
+    "level": "Undergraduate"
+  },
+  {
+    "id": "COURSE_007",
+    "domain": "Engineering",
+    "title": "Mechanical Design",
+    "description": "This course provides a comprehensive introduction to mechanical design. Students will learn fundamental concepts including design, application, process. The course covers engineering, performance with emphasis on practical optimization. Through hands-on exercises and real-world examples, students will develop skills in calculation and principles.",
+    "scope": "Topics covered include: electrical circuits, heat transfer, energy conservation, and feedback control. Students should have basic knowledge of principles. Prerequisites: None or introductory engineering course.",
+    "duration": "10 weeks",
+    "credit_hours": 4,
+    "level": "Graduate"
+  },
+  {
+    "id": "COURSE_008",
+    "domain": "Engineering",
+    "title": "Mechanical Design",
+    "description": "This course provides a comprehensive introduction to mechanical design. Students will learn fundamental concepts including specification, application, system. The course covers analysis, calculation with emphasis on practical performance. Through hands-on exercises and real-world examples, students will develop skills in optimization and calculation.",
+    "scope": "Topics covered include: electrical circuits, energy conservation, stress analysis, and efficiency. Students should have basic knowledge of engineering. Prerequisites: None or introductory engineering course.",
+    "duration": "10 weeks",
+    "credit_hours": 3,
+    "level": "Undergraduate"
+  },
+  {
+    "id": "COURSE_009",
+    "domain": "Healthcare",
+    "title": "Patient Care Basics",
+    "description": "This course provides a comprehensive introduction to patient care basics. Students will learn fundamental concepts including practice, diagnosis, prevention. The course covers care, medical with emphasis on practical clinical. Through hands-on exercises and real-world examples, students will develop skills in wellness and patient.",
+    "scope": "Topics covered include: patient assessment, medications, respiratory system, and infection control. Students should have basic knowledge of patient. Prerequisites: None or introductory healthcare course.",
+    "duration": "10 weeks",
+    "credit_hours": 4,
+    "level": "Undergraduate"
+  },
+  {
+    "id": "COURSE_010",
+    "domain": "Healthcare",
+    "title": "Medical Terminology",
+    "description": "This course provides a comprehensive introduction to medical terminology. Students will learn fundamental concepts including disease, medical, evidence. The course covers healthcare, patient with emphasis on practical clinical. Through hands-on exercises and real-world examples, students will develop skills in care and health.",
+    "scope": "Topics covered include: respiratory system, clinical procedures, patient safety, and medical records. Students should have basic knowledge of quality. Prerequisites: None or introductory healthcare course.",
+    "duration": "10 weeks",
+    "credit_hours": 3,
+    "level": "Professional"
+  },
+  {
+    "id": "COURSE_011",
+    "domain": "Engineering",
+    "title": "Mechanical Design",
+    "description": "This course provides a comprehensive introduction to mechanical design. Students will learn fundamental concepts including design, engineering, calculation. The course covers specification, analysis with emphasis on practical simulation. Through hands-on exercises and real-world examples, students will develop skills in measurement and analysis.",
+    "scope": "Topics covered include: energy conservation, efficiency, electrical circuits, and mechanical systems. Students should have basic knowledge of optimization. Prerequisites: None or introductory engineering course.",
+    "duration": "15 weeks",
+    "credit_hours": 3,
+    "level": "Undergraduate"
+  },
+  {
+    "id": "COURSE_012",
+    "domain": "Engineering",
+    "title": "Engineering Mathematics",
+    "description": "This course provides a comprehensive introduction to engineering mathematics. Students will learn fundamental concepts including performance, specification, system. The course covers optimization, application with emphasis on practical measurement. Through hands-on exercises and real-world examples, students will develop skills in simulation and application.",
+    "scope": "Topics covered include: energy conservation, mechanical systems, efficiency, and material properties. Students should have basic knowledge of modeling. Prerequisites: None or introductory engineering course.",
+    "duration": "8 weeks",
+    "credit_hours": 4,
+    "level": "Professional"
+  },
+  {
+    "id": "COURSE_013",
+    "domain": "Education",
+    "title": "Educational Psychology",
+    "description": "This course provides a comprehensive introduction to educational psychology. Students will learn fundamental concepts including education, diversity, achievement. The course covers curriculum, evaluation with emphasis on practical evaluation. Through hands-on exercises and real-world examples, students will develop skills in curriculum and achievement.",
+    "scope": "Topics covered include: lesson planning, educational technology, assessment design, and differentiated instruction. Students should have basic knowledge of development. Prerequisites: None or introductory education course.",
+    "duration": "8 weeks",
+    "credit_hours": 3,
+    "level": "Professional"
+  },
+  {
+    "id": "COURSE_014",
+    "domain": "Business",
+    "title": "Organizational Behavior",
+    "description": "This course provides a comprehensive introduction to organizational behavior. Students will learn fundamental concepts including profit, decision, growth. The course covers customer, performance with emphasis on practical performance. Through hands-on exercises and real-world examples, students will develop skills in customer and growth.",
+    "scope": "Topics covered include: business models, competitive analysis, team dynamics, and supply chain. Students should have basic knowledge of management. Prerequisites: None or introductory business course.",
+    "duration": "10 weeks",
+    "credit_hours": 4,
+    "level": "Graduate"
+  },
+  {
+    "id": "COURSE_015",
+    "domain": "Computer Science",
+    "title": "Database Management Systems",
+    "description": "This course provides a comprehensive introduction to database management systems. Students will learn fundamental concepts including code, development, data. The course covers system, design with emphasis on practical algorithm. Through hands-on exercises and real-world examples, students will develop skills in design and system.",
+    "scope": "Topics covered include: graphs, recursion, searching, and trees. Students should have basic knowledge of algorithm. Prerequisites: None or introductory computer science course.",
+    "duration": "12 weeks",
+    "credit_hours": 4,
+    "level": "Undergraduate"
+  },
+  {
+    "id": "COURSE_016",
+    "domain": "Engineering",
+    "title": "Thermodynamics Principles",
+    "description": "This course provides a comprehensive introduction to thermodynamics principles. Students will learn fundamental concepts including modeling, engineering, optimization. The course covers specification, application with emphasis on practical application. Through hands-on exercises and real-world examples, students will develop skills in specification and optimization.",
+    "scope": "Topics covered include: force dynamics, feedback control, equilibrium, and material properties. Students should have basic knowledge of system. Prerequisites: None or introductory engineering course.",
+    "duration": "15 weeks",
+    "credit_hours": 3,
+    "level": "Undergraduate"
+  },
+  {
+    "id": "COURSE_017",
+    "domain": "Healthcare",
+    "title": "Healthcare Ethics",
+    "description": "This course provides a comprehensive introduction to healthcare ethics. Students will learn fundamental concepts including wellness, healthcare, prevention. The course covers practice, quality with emphasis on practical clinical. Through hands-on exercises and real-world examples, students will develop skills in disease and quality.",
+    "scope": "Topics covered include: cardiovascular system, medications, patient assessment, and patient safety. Students should have basic knowledge of prevention. Prerequisites: None or introductory healthcare course.",
+    "duration": "10 weeks",
+    "credit_hours": 4,
+    "level": "Graduate"
+  },
+  {
+    "id": "COURSE_018",
+    "domain": "Engineering",
+    "title": "Materials Science",
+    "description": "This course provides a comprehensive introduction to materials science. Students will learn fundamental concepts including principles, performance, modeling. The course covers design, measurement with emphasis on practical system. Through hands-on exercises and real-world examples, students will develop skills in testing and simulation.",
+    "scope": "Topics covered include: electrical circuits, material properties, stress analysis, and equilibrium. Students should have basic knowledge of optimization. Prerequisites: None or introductory engineering course.",
+    "duration": "15 weeks",
+    "credit_hours": 3,
+    "level": "Undergraduate"
+  },
+  {
+    "id": "COURSE_019",
+    "domain": "Business",
+    "title": "Project Management",
+    "description": "This course provides a comprehensive introduction to project management. Students will learn fundamental concepts including innovation, finance, strategy. The course covers management, marketing with emphasis on practical profit. Through hands-on exercises and real-world examples, students will develop skills in operations and marketing.",
+    "scope": "Topics covered include: stakeholder management, budgeting, competitive analysis, and market research. Students should have basic knowledge of innovation. Prerequisites: None or introductory business course.",
+    "duration": "10 weeks",
+    "credit_hours": 3,
+    "level": "Graduate"
+  },
+  {
+    "id": "COURSE_020",
+    "domain": "Business",
+    "title": "Financial Accounting Basics",
+    "description": "This course provides a comprehensive introduction to financial accounting basics. Students will learn fundamental concepts including decision, customer, planning. The course covers finance, value with emphasis on practical operations. Through hands-on exercises and real-world examples, students will develop skills in strategy and management.",
+    "scope": "Topics covered include: strategic planning, financial statements, stakeholder management, and business models. Students should have basic knowledge of profit. Prerequisites: None or introductory business course.",
+    "duration": "12 weeks",
+    "credit_hours": 4,
+    "level": "Graduate"
+  },
+  {
+    "id": "COURSE_021",
+    "domain": "Business",
+    "title": "Operations Management",
+    "description": "This course provides a comprehensive introduction to operations management. Students will learn fundamental concepts including finance, decision, leadership. The course covers management, value with emphasis on practical growth. Through hands-on exercises and real-world examples, students will develop skills in customer and planning.",
+    "scope": "Topics covered include: business models, budgeting, team dynamics, and risk management. Students should have basic knowledge of planning. Prerequisites: None or introductory business course.",
+    "duration": "8 weeks",
+    "credit_hours": 3,
+    "level": "Professional"
+  },
+  {
+    "id": "COURSE_022",
+    "domain": "Business",
+    "title": "Project Management",
+    "description": "This course provides a comprehensive introduction to project management. Students will learn fundamental concepts including operations, finance, analysis. The course covers strategy, decision with emphasis on practical growth. Through hands-on exercises and real-world examples, students will develop skills in decision and strategy.",
+    "scope": "Topics covered include: team dynamics, business models, financial statements, and budgeting. Students should have basic knowledge of operations. Prerequisites: None or introductory business course.",
+    "duration": "8 weeks",
+    "credit_hours": 4,
+    "level": "Graduate"
+  },
+  {
+    "id": "COURSE_023",
+    "domain": "Engineering",
+    "title": "Structural Analysis",
+    "description": "This course provides a comprehensive introduction to structural analysis. Students will learn fundamental concepts including principles, testing, modeling. The course covers measurement, design with emphasis on practical performance. Through hands-on exercises and real-world examples, students will develop skills in process and design.",
+    "scope": "Topics covered include: mechanical systems, force dynamics, energy conservation, and feedback control. Students should have basic knowledge of analysis. Prerequisites: None or introductory engineering course.",
+    "duration": "15 weeks",
+    "credit_hours": 4,
+    "level": "Graduate"
+  },
+  {
+    "id": "COURSE_024",
+    "domain": "Education",
+    "title": "Educational Psychology",
+    "description": "This course provides a comprehensive introduction to educational psychology. Students will learn fundamental concepts including assessment, evaluation, curriculum. The course covers development, learning with emphasis on practical instruction. Through hands-on exercises and real-world examples, students will develop skills in pedagogy and learning.",
+    "scope": "Topics covered include: formative assessment, educational technology, learning styles, and lesson planning. Students should have basic knowledge of development. Prerequisites: None or introductory education course.",
+    "duration": "15 weeks",
+    "credit_hours": 4,
+    "level": "Undergraduate"
+  },
+  {
+    "id": "COURSE_025",
+    "domain": "Computer Science",
+    "title": "Software Engineering Principles",
+    "description": "This course provides a comprehensive introduction to software engineering principles. Students will learn fundamental concepts including software, algorithm, system. The course covers optimization, data with emphasis on practical architecture. Through hands-on exercises and real-world examples, students will develop skills in programming and data.",
+    "scope": "Topics covered include: arrays, data modeling, linked lists, and stacks. Students should have basic knowledge of system. Prerequisites: None or introductory computer science course.",
+    "duration": "15 weeks",
+    "credit_hours": 4,
+    "level": "Professional"
+  },
+  {
+    "id": "COURSE_026",
+    "domain": "Engineering",
+    "title": "Structural Analysis",
+    "description": "This course provides a comprehensive introduction to structural analysis. Students will learn fundamental concepts including optimization, engineering, specification. The course covers system, measurement with emphasis on practical modeling. Through hands-on exercises and real-world examples, students will develop skills in process and measurement.",
+    "scope": "Topics covered include: equilibrium, material properties, efficiency, and stress analysis. Students should have basic knowledge of measurement. Prerequisites: None or introductory engineering course.",
+    "duration": "10 weeks",
+    "credit_hours": 3,
+    "level": "Undergraduate"
+  },
+  {
+    "id": "COURSE_027",
+    "domain": "Computer Science",
+    "title": "Computer Networks",
+    "description": "This course provides a comprehensive introduction to computer networks. Students will learn fundamental concepts including algorithm, architecture, software. The course covers database, system with emphasis on practical code. Through hands-on exercises and real-world examples, students will develop skills in data and testing.",
+    "scope": "Topics covered include: data modeling, linked lists, complexity analysis, and arrays. Students should have basic knowledge of programming. Prerequisites: None or introductory computer science course.",
+    "duration": "8 weeks",
+    "credit_hours": 3,
+    "level": "Graduate"
+  },
+  {
+    "id": "COURSE_028",
+    "domain": "Computer Science",
+    "title": "Software Engineering Principles",
+    "description": "This course provides a comprehensive introduction to software engineering principles. Students will learn fundamental concepts including optimization, security, software. The course covers algorithm, network with emphasis on practical network. Through hands-on exercises and real-world examples, students will develop skills in algorithm and software.",
+    "scope": "Topics covered include: graphs, stacks, sorting, and complexity analysis. Students should have basic knowledge of database. Prerequisites: None or introductory computer science course.",
+    "duration": "8 weeks",
+    "credit_hours": 4,
+    "level": "Undergraduate"
+  },
+  {
+    "id": "COURSE_029",
+    "domain": "Computer Science",
+    "title": "Software Engineering Principles",
+    "description": "This course provides a comprehensive introduction to software engineering principles. Students will learn fundamental concepts including network, development, software. The course covers code, programming with emphasis on practical implementation. Through hands-on exercises and real-world examples, students will develop skills in programming and code.",
+    "scope": "Topics covered include: recursion, data modeling, queues, and graphs. Students should have basic knowledge of system. Prerequisites: None or introductory computer science course.",
+    "duration": "8 weeks",
+    "credit_hours": 3,
+    "level": "Graduate"
+  },
+  {
+    "id": "COURSE_030",
+    "domain": "Engineering",
+    "title": "Control Systems",
+    "description": "This course provides a comprehensive introduction to control systems. Students will learn fundamental concepts including application, principles, testing. The course covers performance, measurement with emphasis on practical analysis. Through hands-on exercises and real-world examples, students will develop skills in engineering and modeling.",
+    "scope": "Topics covered include: equilibrium, stress analysis, feedback control, and energy conservation. Students should have basic knowledge of modeling. Prerequisites: None or introductory engineering course.",
+    "duration": "10 weeks",
+    "credit_hours": 3,
+    "level": "Undergraduate"
+  }
+]

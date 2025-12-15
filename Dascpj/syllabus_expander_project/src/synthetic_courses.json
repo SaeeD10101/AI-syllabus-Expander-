@@ -1,0 +1,302 @@
+[
+  {
+    "id": "COURSE_001",
+    "domain": "Computer Science",
+    "title": "Computer Networks",
+    "description": "This course provides a comprehensive introduction to computer networks. Students will learn fundamental concepts including network, implementation, testing. The course covers data, algorithm with emphasis on practical programming. Through hands-on exercises and real-world examples, students will develop skills in algorithm and data.",
+    "scope": "Topics covered include: trees, queues, linked lists, and hash tables. Students should have basic knowledge of optimization. Prerequisites: None or introductory computer science course.",
+    "duration": "12 weeks",
+    "credit_hours": 3,
+    "level": "Undergraduate"
+  },
+  {
+    "id": "COURSE_002",
+    "domain": "Business",
+    "title": "Entrepreneurship",
+    "description": "This course provides a comprehensive introduction to entrepreneurship. Students will learn fundamental concepts including operations, analysis, management. The course covers planning, finance with emphasis on practical finance. Through hands-on exercises and real-world examples, students will develop skills in planning and management.",
+    "scope": "Topics covered include: business models, financial statements, supply chain, and team dynamics. Students should have basic knowledge of marketing. Prerequisites: None or introductory business course.",
+    "duration": "10 weeks",
+    "credit_hours": 4,
+    "level": "Undergraduate"
+  },
+  {
+    "id": "COURSE_003",
+    "domain": "Healthcare",
+    "title": "Nursing Fundamentals",
+    "description": "This course provides a comprehensive introduction to nursing fundamentals. Students will learn fundamental concepts including clinical, treatment, care. The course covers wellness, prevention with emphasis on practical health. Through hands-on exercises and real-world examples, students will develop skills in disease and diagnosis.",
+    "scope": "Topics covered include: vital signs, patient assessment, medications, and clinical procedures. Students should have basic knowledge of care. Prerequisites: None or introductory healthcare course.",
+    "duration": "8 weeks",
+    "credit_hours": 3,
+    "level": "Graduate"
+  },
+  {
+    "id": "COURSE_004",
+    "domain": "Education",
+    "title": "Learning Theories",
+    "description": "This course provides a comprehensive introduction to learning theories. Students will learn fundamental concepts including curriculum, education, teaching. The course covers development, cognition with emphasis on practical motivation. Through hands-on exercises and real-world examples, students will develop skills in cognition and development.",
+    "scope": "Topics covered include: learning styles, differentiated instruction, cognitive development, and lesson planning. Students should have basic knowledge of pedagogy. Prerequisites: None or introductory education course.",
+    "duration": "10 weeks",
+    "credit_hours": 3,
+    "level": "Graduate"
+  },
+  {
+    "id": "COURSE_005",
+    "domain": "Healthcare",
+    "title": "Public Health Management",
+    "description": "This course provides a comprehensive introduction to public health management. Students will learn fundamental concepts including health, care, diagnosis. The course covers medical, practice with emphasis on practical practice. Through hands-on exercises and real-world examples, students will develop skills in medical and diagnosis.",
+    "scope": "Topics covered include: infection control, clinical procedures, cardiovascular system, and health promotion. Students should have basic knowledge of prevention. Prerequisites: None or introductory healthcare course.",
+    "duration": "8 weeks",
+    "credit_hours": 4,
+    "level": "Graduate"
+  },
+  {
+    "id": "COURSE_006",
+    "domain": "Business",
+    "title": "Organizational Behavior",
+    "description": "This course provides a comprehensive introduction to organizational behavior. Students will learn fundamental concepts including customer, performance, profit. The course covers strategy, marketing with emphasis on practical planning. Through hands-on exercises and real-world examples, students will develop skills in decision and leadership.",
+    "scope": "Topics covered include: financial statements, competitive analysis, risk management, and market research. Students should have basic knowledge of profit. Prerequisites: None or introductory business course.",
+    "duration": "10 weeks",
+    "credit_hours": 4,
+    "level": "Graduate"
+  },
+  {
+    "id": "COURSE_007",
+    "domain": "Computer Science",
+    "title": "Machine Learning Basics",
+    "description": "This course provides a comprehensive introduction to machine learning basics. Students will learn fundamental concepts including algorithm, optimization, code. The course covers data, system with emphasis on practical security. Through hands-on exercises and real-world examples, students will develop skills in architecture and testing.",
+    "scope": "Topics covered include: hash tables, queues, complexity analysis, and trees. Students should have basic knowledge of optimization. Prerequisites: None or introductory computer science course.",
+    "duration": "10 weeks",
+    "credit_hours": 4,
+    "level": "Undergraduate"
+  },
+  {
+    "id": "COURSE_008",
+    "domain": "Education",
+    "title": "Curriculum Design",
+    "description": "This course provides a comprehensive introduction to curriculum design. Students will learn fundamental concepts including achievement, cognition, evaluation. The course covers education, engagement with emphasis on practical learning. Through hands-on exercises and real-world examples, students will develop skills in student and motivation.",
+    "scope": "Topics covered include: cognitive development, student engagement, assessment design, and educational technology. Students should have basic knowledge of assessment. Prerequisites: None or introductory education course.",
+    "duration": "10 weeks",
+    "credit_hours": 3,
+    "level": "Undergraduate"
+  },
+  {
+    "id": "COURSE_009",
+    "domain": "Healthcare",
+    "title": "Health Informatics",
+    "description": "This course provides a comprehensive introduction to health informatics. Students will learn fundamental concepts including quality, practice, clinical. The course covers healthcare, disease with emphasis on practical disease. Through hands-on exercises and real-world examples, students will develop skills in healthcare and clinical.",
+    "scope": "Topics covered include: vital signs, clinical procedures, medications, and patient safety. Students should have basic knowledge of prevention. Prerequisites: None or introductory healthcare course.",
+    "duration": "12 weeks",
+    "credit_hours": 4,
+    "level": "Undergraduate"
+  },
+  {
+    "id": "COURSE_010",
+    "domain": "Healthcare",
+    "title": "Healthcare Ethics",
+    "description": "This course provides a comprehensive introduction to healthcare ethics. Students will learn fundamental concepts including wellness, quality, disease. The course covers health, medical with emphasis on practical patient. Through hands-on exercises and real-world examples, students will develop skills in practice and prevention.",
+    "scope": "Topics covered include: medical records, clinical procedures, patient safety, and medications. Students should have basic knowledge of clinical. Prerequisites: None or introductory healthcare course.",
+    "duration": "10 weeks",
+    "credit_hours": 3,
+    "level": "Professional"
+  },
+  {
+    "id": "COURSE_011",
+    "domain": "Education",
+    "title": "Assessment and Evaluation",
+    "description": "This course provides a comprehensive introduction to assessment and evaluation. Students will learn fundamental concepts including evaluation, motivation, teaching. The course covers development, engagement with emphasis on practical student. Through hands-on exercises and real-world examples, students will develop skills in cognition and engagement.",
+    "scope": "Topics covered include: differentiated instruction, assessment design, student engagement, and learning styles. Students should have basic knowledge of curriculum. Prerequisites: None or introductory education course.",
+    "duration": "12 weeks",
+    "credit_hours": 3,
+    "level": "Professional"
+  },
+  {
+    "id": "COURSE_012",
+    "domain": "Healthcare",
+    "title": "Medical Terminology",
+    "description": "This course provides a comprehensive introduction to medical terminology. Students will learn fundamental concepts including care, quality, health. The course covers wellness, practice with emphasis on practical clinical. Through hands-on exercises and real-world examples, students will develop skills in patient and treatment.",
+    "scope": "Topics covered include: vital signs, clinical procedures, respiratory system, and infection control. Students should have basic knowledge of clinical. Prerequisites: None or introductory healthcare course.",
+    "duration": "15 weeks",
+    "credit_hours": 4,
+    "level": "Graduate"
+  },
+  {
+    "id": "COURSE_013",
+    "domain": "Computer Science",
+    "title": "Introduction to Data Structures",
+    "description": "This course provides a comprehensive introduction to introduction to data structures. Students will learn fundamental concepts including code, optimization, system. The course covers algorithm, database with emphasis on practical implementation. Through hands-on exercises and real-world examples, students will develop skills in database and algorithm.",
+    "scope": "Topics covered include: complexity analysis, graphs, arrays, and sorting. Students should have basic knowledge of optimization. Prerequisites: None or introductory computer science course.",
+    "duration": "12 weeks",
+    "credit_hours": 3,
+    "level": "Undergraduate"
+  },
+  {
+    "id": "COURSE_014",
+    "domain": "Engineering",
+    "title": "Materials Science",
+    "description": "This course provides a comprehensive introduction to materials science. Students will learn fundamental concepts including system, analysis, engineering. The course covers measurement, modeling with emphasis on practical application. Through hands-on exercises and real-world examples, students will develop skills in modeling and measurement.",
+    "scope": "Topics covered include: energy conservation, equilibrium, mechanical systems, and efficiency. Students should have basic knowledge of specification. Prerequisites: None or introductory engineering course.",
+    "duration": "8 weeks",
+    "credit_hours": 4,
+    "level": "Professional"
+  },
+  {
+    "id": "COURSE_015",
+    "domain": "Healthcare",
+    "title": "Human Anatomy and Physiology",
+    "description": "This course provides a comprehensive introduction to human anatomy and physiology. Students will learn fundamental concepts including treatment, disease, healthcare. The course covers prevention, health with emphasis on practical health. Through hands-on exercises and real-world examples, students will develop skills in prevention and healthcare.",
+    "scope": "Topics covered include: clinical procedures, medications, vital signs, and patient assessment. Students should have basic knowledge of clinical. Prerequisites: None or introductory healthcare course.",
+    "duration": "10 weeks",
+    "credit_hours": 4,
+    "level": "Undergraduate"
+  },
+  {
+    "id": "COURSE_016",
+    "domain": "Engineering",
+    "title": "Mechanical Design",
+    "description": "This course provides a comprehensive introduction to mechanical design. Students will learn fundamental concepts including design, simulation, specification. The course covers calculation, application with emphasis on practical system. Through hands-on exercises and real-world examples, students will develop skills in testing and application.",
+    "scope": "Topics covered include: force dynamics, efficiency, material properties, and feedback control. Students should have basic knowledge of specification. Prerequisites: None or introductory engineering course.",
+    "duration": "8 weeks",
+    "credit_hours": 3,
+    "level": "Graduate"
+  },
+  {
+    "id": "COURSE_017",
+    "domain": "Business",
+    "title": "Introduction to Marketing",
+    "description": "This course provides a comprehensive introduction to introduction to marketing. Students will learn fundamental concepts including marketing, customer, strategy. The course covers decision, operations with emphasis on practical leadership. Through hands-on exercises and real-world examples, students will develop skills in finance and value.",
+    "scope": "Topics covered include: budgeting, financial statements, supply chain, and team dynamics. Students should have basic knowledge of finance. Prerequisites: None or introductory business course.",
+    "duration": "8 weeks",
+    "credit_hours": 3,
+    "level": "Professional"
+  },
+  {
+    "id": "COURSE_018",
+    "domain": "Computer Science",
+    "title": "Web Development Fundamentals",
+    "description": "This course provides a comprehensive introduction to web development fundamentals. Students will learn fundamental concepts including architecture, design, database. The course covers programming, software with emphasis on practical data. Through hands-on exercises and real-world examples, students will develop skills in code and algorithm.",
+    "scope": "Topics covered include: searching, recursion, arrays, and data modeling. Students should have basic knowledge of design. Prerequisites: None or introductory computer science course.",
+    "duration": "12 weeks",
+    "credit_hours": 3,
+    "level": "Undergraduate"
+  },
+  {
+    "id": "COURSE_019",
+    "domain": "Healthcare",
+    "title": "Patient Care Basics",
+    "description": "This course provides a comprehensive introduction to patient care basics. Students will learn fundamental concepts including evidence, clinical, medical. The course covers prevention, disease with emphasis on practical disease. Through hands-on exercises and real-world examples, students will develop skills in prevention and medical.",
+    "scope": "Topics covered include: cardiovascular system, vital signs, patient assessment, and medications. Students should have basic knowledge of quality. Prerequisites: None or introductory healthcare course.",
+    "duration": "12 weeks",
+    "credit_hours": 3,
+    "level": "Professional"
+  },
+  {
+    "id": "COURSE_020",
+    "domain": "Computer Science",
+    "title": "Introduction to Data Structures",
+    "description": "This course provides a comprehensive introduction to introduction to data structures. Students will learn fundamental concepts including design, software, system. The course covers algorithm, architecture with emphasis on practical programming. Through hands-on exercises and real-world examples, students will develop skills in architecture and algorithm.",
+    "scope": "Topics covered include: queues, complexity analysis, algorithms, and sorting. Students should have basic knowledge of code. Prerequisites: None or introductory computer science course.",
+    "duration": "10 weeks",
+    "credit_hours": 4,
+    "level": "Professional"
+  },
+  {
+    "id": "COURSE_021",
+    "domain": "Business",
+    "title": "Introduction to Marketing",
+    "description": "This course provides a comprehensive introduction to introduction to marketing. Students will learn fundamental concepts including customer, innovation, growth. The course covers finance, planning with emphasis on practical profit. Through hands-on exercises and real-world examples, students will develop skills in planning and finance.",
+    "scope": "Topics covered include: market research, financial statements, business models, and risk management. Students should have basic knowledge of finance. Prerequisites: None or introductory business course.",
+    "duration": "15 weeks",
+    "credit_hours": 4,
+    "level": "Graduate"
+  },
+  {
+    "id": "COURSE_022",
+    "domain": "Engineering",
+    "title": "Engineering Mathematics",
+    "description": "This course provides a comprehensive introduction to engineering mathematics. Students will learn fundamental concepts including process, application, design. The course covers modeling, simulation with emphasis on practical simulation. Through hands-on exercises and real-world examples, students will develop skills in modeling and design.",
+    "scope": "Topics covered include: material properties, mechanical systems, force dynamics, and stress analysis. Students should have basic knowledge of testing. Prerequisites: None or introductory engineering course.",
+    "duration": "8 weeks",
+    "credit_hours": 3,
+    "level": "Professional"
+  },
+  {
+    "id": "COURSE_023",
+    "domain": "Education",
+    "title": "Special Education",
+    "description": "This course provides a comprehensive introduction to special education. Students will learn fundamental concepts including learning, engagement, curriculum. The course covers teaching, evaluation with emphasis on practical instruction. Through hands-on exercises and real-world examples, students will develop skills in diversity and evaluation.",
+    "scope": "Topics covered include: differentiated instruction, student engagement, assessment design, and lesson planning. Students should have basic knowledge of development. Prerequisites: None or introductory education course.",
+    "duration": "10 weeks",
+    "credit_hours": 3,
+    "level": "Undergraduate"
+  },
+  {
+    "id": "COURSE_024",
+    "domain": "Business",
+    "title": "Financial Accounting Basics",
+    "description": "This course provides a comprehensive introduction to financial accounting basics. Students will learn fundamental concepts including value, management, customer. The course covers operations, analysis with emphasis on practical decision. Through hands-on exercises and real-world examples, students will develop skills in growth and leadership.",
+    "scope": "Topics covered include: market research, business models, risk management, and competitive analysis. Students should have basic knowledge of marketing. Prerequisites: None or introductory business course.",
+    "duration": "15 weeks",
+    "credit_hours": 4,
+    "level": "Professional"
+  },
+  {
+    "id": "COURSE_025",
+    "domain": "Education",
+    "title": "Learning Theories",
+    "description": "This course provides a comprehensive introduction to learning theories. Students will learn fundamental concepts including curriculum, assessment, diversity. The course covers instruction, motivation with emphasis on practical engagement. Through hands-on exercises and real-world examples, students will develop skills in motivation and instruction.",
+    "scope": "Topics covered include: assessment design, student engagement, cognitive development, and differentiated instruction. Students should have basic knowledge of engagement. Prerequisites: None or introductory education course.",
+    "duration": "10 weeks",
+    "credit_hours": 4,
+    "level": "Professional"
+  },
+  {
+    "id": "COURSE_026",
+    "domain": "Healthcare",
+    "title": "Pharmacology Basics",
+    "description": "This course provides a comprehensive introduction to pharmacology basics. Students will learn fundamental concepts including diagnosis, health, treatment. The course covers wellness, evidence with emphasis on practical patient. Through hands-on exercises and real-world examples, students will develop skills in care and quality.",
+    "scope": "Topics covered include: medications, cardiovascular system, patient safety, and respiratory system. Students should have basic knowledge of healthcare. Prerequisites: None or introductory healthcare course.",
+    "duration": "12 weeks",
+    "credit_hours": 4,
+    "level": "Graduate"
+  },
+  {
+    "id": "COURSE_027",
+    "domain": "Computer Science",
+    "title": "Computer Networks",
+    "description": "This course provides a comprehensive introduction to computer networks. Students will learn fundamental concepts including database, code, algorithm. The course covers security, programming with emphasis on practical design. Through hands-on exercises and real-world examples, students will develop skills in programming and security.",
+    "scope": "Topics covered include: linked lists, hash tables, data modeling, and queues. Students should have basic knowledge of code. Prerequisites: None or introductory computer science course.",
+    "duration": "15 weeks",
+    "credit_hours": 3,
+    "level": "Professional"
+  },
+  {
+    "id": "COURSE_028",
+    "domain": "Computer Science",
+    "title": "Introduction to Data Structures",
+    "description": "This course provides a comprehensive introduction to introduction to data structures. Students will learn fundamental concepts including algorithm, optimization, implementation. The course covers system, design with emphasis on practical design. Through hands-on exercises and real-world examples, students will develop skills in system and implementation.",
+    "scope": "Topics covered include: trees, sorting, arrays, and searching. Students should have basic knowledge of security. Prerequisites: None or introductory computer science course.",
+    "duration": "15 weeks",
+    "credit_hours": 3,
+    "level": "Professional"
+  },
+  {
+    "id": "COURSE_029",
+    "domain": "Business",
+    "title": "Business Analytics",
+    "description": "This course provides a comprehensive introduction to business analytics. Students will learn fundamental concepts including management, planning, strategy. The course covers marketing, analysis with emphasis on practical decision. Through hands-on exercises and real-world examples, students will develop skills in performance and growth.",
+    "scope": "Topics covered include: stakeholder management, financial statements, market research, and supply chain. Students should have basic knowledge of profit. Prerequisites: None or introductory business course.",
+    "duration": "10 weeks",
+    "credit_hours": 3,
+    "level": "Graduate"
+  },
+  {
+    "id": "COURSE_030",
+    "domain": "Computer Science",
+    "title": "Database Management Systems",
+    "description": "This course provides a comprehensive introduction to database management systems. Students will learn fundamental concepts including testing, network, architecture. The course covers development, software with emphasis on practical software. Through hands-on exercises and real-world examples, students will develop skills in development and architecture.",
+    "scope": "Topics covered include: graphs, linked lists, searching, and queues. Students should have basic knowledge of optimization. Prerequisites: None or introductory computer science course.",
+    "duration": "12 weeks",
+    "credit_hours": 3,
+    "level": "Professional"
+  }
+]

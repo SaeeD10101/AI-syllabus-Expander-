@@ -1,0 +1,1127 @@
+{
+  "metadata": {
+    "courseTitle": "Fluid Mechanics",
+    "description": "This course provides a comprehensive introduction to fluid mechanics. Students will learn fundamental concepts including engineering, measurement, process. The course covers system, optimization with emphasis on practical optimization. Through hands-on exercises and real-world examples, students will develop skills in system and process.",
+    "scope": "Topics covered include: heat transfer, electrical circuits, mechanical systems, and material properties. Students should have basic knowledge of application. Prerequisites: None or introductory engineering course.",
+    "duration": "12 weeks",
+    "generated_date": "2025-11-13 22:50:24"
+  },
+  "modules": [
+    {
+      "id": 1,
+      "title": "Introduction to Engineering",
+      "subtopics": [
+        "engineering",
+        "skills",
+        "none"
+      ],
+      "keywords": [
+        "engineering",
+        "skills",
+        "none"
+      ],
+      "hours": 7,
+      "description": "This module covers engineering, skills, none, providing a comprehensive understanding of engineering.",
+      "learningOutcomes": [
+        {
+          "outcome": "Students will be able to identify key engineering",
+          "bloomLevel": "Remember",
+          "bloomTier": "Cognitive",
+          "module_context": "engineering"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Practical Material Properties",
+      "subtopics": [
+        "material properties",
+        "mechanical systems",
+        "hands-on exercises"
+      ],
+      "keywords": [
+        "material properties",
+        "mechanical systems",
+        "hands-on exercises"
+      ],
+      "hours": 7,
+      "description": "This module covers material properties, mechanical systems, hands-on exercises, providing a comprehensive understanding of material properties.",
+      "learningOutcomes": [
+        {
+          "outcome": "Students will be able to use material properties to solve problems",
+          "bloomLevel": "Apply",
+          "bloomTier": "Cognitive",
+          "module_context": "material properties"
+        },
+        {
+          "outcome": "Students will be able to summarize material properties",
+          "bloomLevel": "Understand",
+          "bloomTier": "Cognitive",
+          "module_context": "material properties"
+        },
+        {
+          "outcome": "Students will be able to list the main material properties",
+          "bloomLevel": "Remember",
+          "bloomTier": "Cognitive",
+          "module_context": "material properties"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Practical Real-World Examples",
+      "subtopics": [
+        "real-world examples",
+        "emphasis",
+        "topics"
+      ],
+      "keywords": [
+        "real-world examples",
+        "emphasis",
+        "topics"
+      ],
+      "hours": 7,
+      "description": "This module covers real-world examples, emphasis, topics, providing a comprehensive understanding of real-world examples.",
+      "learningOutcomes": [
+        {
+          "outcome": "Students will be able to implement real-world examples",
+          "bloomLevel": "Apply",
+          "bloomTier": "Cognitive",
+          "module_context": "real-world examples"
+        },
+        {
+          "outcome": "Students will be able to critique real-world examples",
+          "bloomLevel": "Evaluate",
+          "bloomTier": "Cognitive",
+          "module_context": "real-world examples"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Applied Heat Transfer",
+      "subtopics": [
+        "heat transfer",
+        "the course",
+        "application"
+      ],
+      "keywords": [
+        "heat transfer",
+        "the course",
+        "application"
+      ],
+      "hours": 7,
+      "description": "This module covers heat transfer, the course, application, providing a comprehensive understanding of heat transfer.",
+      "learningOutcomes": [
+        {
+          "outcome": "Students will be able to compare different heat transfer",
+          "bloomLevel": "Analyze",
+          "bloomTier": "Cognitive",
+          "module_context": "heat transfer"
+        },
+        {
+          "outcome": "Students will be able to use heat transfer to solve problems",
+          "bloomLevel": "Apply",
+          "bloomTier": "Cognitive",
+          "module_context": "heat transfer"
+        },
+        {
+          "outcome": "Students will be able to critique heat transfer",
+          "bloomLevel": "Evaluate",
+          "bloomTier": "Cognitive",
+          "module_context": "heat transfer"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Capstone Project: Fundamental Concepts",
+      "subtopics": [
+        "fundamental concepts",
+        "prerequisites",
+        "basic knowledge"
+      ],
+      "keywords": [
+        "fundamental concepts",
+        "prerequisites",
+        "basic knowledge"
+      ],
+      "hours": 7,
+      "description": "This module covers fundamental concepts, prerequisites, basic knowledge, providing a comprehensive understanding of fundamental concepts.",
+      "learningOutcomes": [
+        {
+          "outcome": "Students will be able to apply fundamental concepts to fundamental concepts",
+          "bloomLevel": "Apply",
+          "bloomTier": "Cognitive",
+          "module_context": "fundamental concepts"
+        },
+        {
+          "outcome": "Students will be able to develop solutions using fundamental concepts",
+          "bloomLevel": "Create",
+          "bloomTier": "Cognitive",
+          "module_context": "fundamental concepts"
+        },
+        {
+          "outcome": "Students will be able to differentiate between fundamental concepts",
+          "bloomLevel": "Analyze",
+          "bloomTier": "Cognitive",
+          "module_context": "fundamental concepts"
+        }
+      ]
+    }
+  ],
+  "courseType": "technical",
+  "totalHours": 35,
+  "courseLearningOutcomes": [
+    {
+      "id": "CLO-1",
+      "outcome": "Students will be able to summarize fluid mechanics",
+      "bloomLevel": "Understand",
+      "bloomTier": "Cognitive",
+      "mappedModules": [
+        2
+      ]
+    },
+    {
+      "id": "CLO-2",
+      "outcome": "Students will be able to demonstrate fluid mechanics",
+      "bloomLevel": "Apply",
+      "bloomTier": "Cognitive",
+      "mappedModules": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "CLO-3",
+      "outcome": "Students will be able to use fluid mechanics to solve problems",
+      "bloomLevel": "Apply",
+      "bloomTier": "Cognitive",
+      "mappedModules": [
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "id": "CLO-4",
+      "outcome": "Students will be able to analyze fluid mechanics",
+      "bloomLevel": "Analyze",
+      "bloomTier": "Cognitive",
+      "mappedModules": [
+        4,
+        5
+      ]
+    }
+  ],
+  "bloomStatistics": {
+    "module_level": {
+      "counts": {
+        "Remember": 2,
+        "Understand": 1,
+        "Apply": 4,
+        "Analyze": 2,
+        "Evaluate": 2,
+        "Create": 1
+      },
+      "percentages": {
+        "Remember": 16.7,
+        "Understand": 8.3,
+        "Apply": 33.3,
+        "Analyze": 16.7,
+        "Evaluate": 16.7,
+        "Create": 8.3
+      },
+      "total": 12
+    },
+    "course_level": {
+      "counts": {
+        "Remember": 0,
+        "Understand": 1,
+        "Apply": 2,
+        "Analyze": 1,
+        "Evaluate": 0,
+        "Create": 0
+      },
+      "percentages": {
+        "Remember": 0.0,
+        "Understand": 25.0,
+        "Apply": 50.0,
+        "Analyze": 25.0,
+        "Evaluate": 0.0,
+        "Create": 0.0
+      },
+      "total": 4
+    }
+  },
+  "assessmentBlueprint": {
+    "totalWeight": 100,
+    "components": [
+      {
+        "type": "Labs/Assignments",
+        "weight": 35,
+        "description": "Hands-on practical exercises. Focus on coding exercises and algorithm implementation.",
+        "timing": "Weekly (Weeks 2-12)",
+        "format": "Practical work, problem sets",
+        "linkedLOs": [
+          "CLO-2",
+          "CLO-3",
+          "CLO-4"
+        ],
+        "linkedModuleLOs": [
+          "M2-LO1",
+          "M3-LO2",
+          "M4-LO3",
+          "M4-LO4",
+          "M5-LO5",
+          "M5-LO6"
+        ],
+        "bloomLevels": [
+          "Apply",
+          "Analyze"
+        ]
+      },
+      {
+        "type": "Quizzes",
+        "weight": 21,
+        "description": "Regular assessments of module comprehension",
+        "timing": "Weekly (Weeks 2-12)",
+        "format": "Mixed: MCQ, short answer",
+        "linkedLOs": [
+          "CLO-1",
+          "CLO-2",
+          "CLO-3"
+        ],
+        "linkedModuleLOs": [
+          "M1-LO1",
+          "M2-LO2",
+          "M2-LO3",
+          "M2-LO4",
+          "M3-LO5",
+          "M4-LO6"
+        ],
+        "bloomLevels": [
+          "Remember",
+          "Understand",
+          "Apply"
+        ]
+      },
+      {
+        "type": "Project",
+        "weight": 21,
+        "description": "Comprehensive project synthesizing course concepts. Build a complete application demonstrating course concepts.",
+        "timing": "Weeks 3-6",
+        "format": "Project deliverable + documentation",
+        "linkedLOs": [
+          "CLO-4"
+        ],
+        "linkedModuleLOs": [
+          "M3-LO1",
+          "M4-LO2",
+          "M4-LO3",
+          "M5-LO4",
+          "M5-LO5"
+        ],
+        "bloomLevels": [
+          "Analyze",
+          "Evaluate",
+          "Create"
+        ]
+      },
+      {
+        "type": "Final Exam",
+        "weight": 12,
+        "description": "Comprehensive final assessment",
+        "timing": "Final Week",
+        "format": "Comprehensive exam",
+        "linkedLOs": [],
+        "linkedModuleLOs": [],
+        "bloomLevels": [
+          "All levels"
+        ]
+      },
+      {
+        "type": "Pre-Test",
+        "weight": 11,
+        "description": "Diagnostic assessment to gauge prior knowledge",
+        "timing": "Week 1",
+        "format": "Multiple choice, True/False",
+        "linkedLOs": [
+          "CLO-1"
+        ],
+        "linkedModuleLOs": [
+          "M1-LO1",
+          "M2-LO2",
+          "M2-LO3"
+        ],
+        "bloomLevels": [
+          "Remember",
+          "Understand"
+        ]
+      }
+    ],
+    "gradingScale": {
+      "A": "90-100%",
+      "B": "80-89%",
+      "C": "70-79%",
+      "D": "60-69%",
+      "F": "Below 60%"
+    },
+    "recommendations": [
+      "Assessment blueprint is well-balanced for this course type."
+    ]
+  },
+  "assessmentAnalysis": {
+    "quality_score": 110.6,
+    "bloom_coverage": {
+      "assessed_blooms": [
+        "Remember",
+        "All levels",
+        "Apply",
+        "Understand",
+        "Create",
+        "Analyze",
+        "Evaluate"
+      ],
+      "outcome_blooms": [
+        "Remember",
+        "Apply",
+        "Understand",
+        "Create",
+        "Analyze",
+        "Evaluate"
+      ],
+      "uncovered_blooms": [],
+      "coverage_percentage": 116.66666666666667
+    },
+    "outcome_alignment": {
+      "total_outcomes": 16,
+      "assessed_outcomes": 19,
+      "unassessed_outcomes": [
+        "M4-LO1",
+        "M5-LO1",
+        "M5-LO2",
+        "M5-LO3"
+      ],
+      "coverage_percentage": 118.75
+    },
+    "weight_distribution": {
+      "issues": [],
+      "warnings": [],
+      "continuous_weight": 56,
+      "high_stakes_weight": 12
+    },
+    "timing": {
+      "warnings": [],
+      "assessment_count": 5
+    },
+    "overall_grade": "Excellent"
+  },
+  "sampleQuestions": [
+    {
+      "type": "MCQ",
+      "bloomLevel": "Understand",
+      "difficulty": "Easy",
+      "question": "Compare engineering with skills.",
+      "options": [
+        "A) Engineering serves as the primary mechanism for data processing",
+        "B) It provides a framework for implementing engineering",
+        "C) Engineering enables systematic analysis and evaluation",
+        "D) It represents an alternative approach to engineering"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Option D is correct because it accurately describes engineering.",
+      "estimatedTime": "2 minutes",
+      "tags": [
+        "engineering",
+        "understand"
+      ],
+      "id": "Q-M1-001",
+      "moduleId": 1
+    },
+    {
+      "type": "MCQ",
+      "bloomLevel": "Apply",
+      "difficulty": "Medium",
+      "question": "What is the primary purpose of engineering?",
+      "options": [
+        "A) Engineering serves as the primary mechanism for data processing",
+        "B) It provides a framework for implementing engineering",
+        "C) Engineering enables systematic analysis and evaluation",
+        "D) It represents an alternative approach to engineering"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Option C is correct because it accurately describes engineering.",
+      "estimatedTime": "3 minutes",
+      "tags": [
+        "engineering",
+        "apply"
+      ],
+      "id": "Q-M1-002",
+      "moduleId": 1
+    },
+    {
+      "type": "MCQ",
+      "bloomLevel": "Apply",
+      "difficulty": "Medium",
+      "question": "What is the primary purpose of engineering?",
+      "options": [
+        "A) Engineering serves as the primary mechanism for data processing",
+        "B) It provides a framework for implementing engineering",
+        "C) Engineering enables systematic analysis and evaluation",
+        "D) It represents an alternative approach to engineering"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Option D is correct because it accurately describes engineering.",
+      "estimatedTime": "3 minutes",
+      "tags": [
+        "engineering",
+        "apply"
+      ],
+      "id": "Q-M1-003",
+      "moduleId": 1
+    },
+    {
+      "type": "Short Answer",
+      "bloomLevel": "Analyze",
+      "difficulty": "Medium",
+      "question": "Analyze the factors that influence introduction to engineering.",
+      "rubric": {
+        "Excellent (9-10 pts)": "Sophisticated analysis with strong justification",
+        "Good (7-8 pts)": "Solid understanding with reasonable justification",
+        "Adequate (5-6 pts)": "Basic application with limited depth",
+        "Poor (0-4 pts)": "Superficial or incorrect application"
+      },
+      "sampleAnswer": "A comprehensive answer should address the key principles of engineering, demonstrate understanding of its applications, and provide relevant examples.",
+      "estimatedTime": "18 minutes",
+      "tags": [
+        "engineering",
+        "analyze",
+        "written-response"
+      ],
+      "id": "Q-M1-004",
+      "moduleId": 1
+    },
+    {
+      "type": "Case Study",
+      "bloomLevel": "Create",
+      "difficulty": "Hard",
+      "scenario": "A company is implementing introduction to engineering to improve their operations. They face challenges with engineering. Current metrics show suboptimal performance in key areas.",
+      "question": "Design a comprehensive solution that addresses the challenges. Your solution should incorporate best practices in introduction to engineering.",
+      "rubric": {
+        "Analysis (30%)": "Depth of problem analysis and identification of key issues",
+        "Solution Quality (40%)": "Effectiveness and feasibility of proposed solution",
+        "Justification (20%)": "Quality of reasoning and evidence provided",
+        "Presentation (10%)": "Clarity and organization of response"
+      },
+      "estimatedTime": "30-45 minutes",
+      "tags": [
+        "introduction to engineering",
+        "create",
+        "case-study",
+        "applied"
+      ],
+      "id": "Q-M1-005",
+      "moduleId": 1
+    },
+    {
+      "type": "MCQ",
+      "bloomLevel": "Apply",
+      "difficulty": "Medium",
+      "question": "What is the primary purpose of material properties?",
+      "options": [
+        "A) Material Properties serves as the primary mechanism for data processing",
+        "B) It provides a framework for implementing material properties",
+        "C) Material Properties enables systematic analysis and evaluation",
+        "D) It represents an alternative approach to material properties"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Option B is correct because it accurately describes material properties.",
+      "estimatedTime": "3 minutes",
+      "tags": [
+        "material properties",
+        "apply"
+      ],
+      "id": "Q-M2-001",
+      "moduleId": 2
+    },
+    {
+      "type": "MCQ",
+      "bloomLevel": "Remember",
+      "difficulty": "Easy",
+      "question": "Which of the following best describes practical material properties?",
+      "options": [
+        "A) Material Properties serves as the primary mechanism for data processing",
+        "B) It provides a framework for implementing material properties",
+        "C) Material Properties enables systematic analysis and evaluation",
+        "D) It represents an alternative approach to material properties"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Option D is correct because it accurately describes material properties.",
+      "estimatedTime": "2 minutes",
+      "tags": [
+        "material properties",
+        "remember"
+      ],
+      "id": "Q-M2-002",
+      "moduleId": 2
+    },
+    {
+      "type": "MCQ",
+      "bloomLevel": "Apply",
+      "difficulty": "Medium",
+      "question": "What is the primary purpose of material properties?",
+      "options": [
+        "A) Material Properties serves as the primary mechanism for data processing",
+        "B) It provides a framework for implementing material properties",
+        "C) Material Properties enables systematic analysis and evaluation",
+        "D) It represents an alternative approach to material properties"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Option C is correct because it accurately describes material properties.",
+      "estimatedTime": "3 minutes",
+      "tags": [
+        "material properties",
+        "apply"
+      ],
+      "id": "Q-M2-003",
+      "moduleId": 2
+    },
+    {
+      "type": "Short Answer",
+      "bloomLevel": "Apply",
+      "difficulty": "Medium",
+      "question": "Explain how material properties works in practice.",
+      "rubric": {
+        "Excellent (9-10 pts)": "Sophisticated analysis with strong justification",
+        "Good (7-8 pts)": "Solid understanding with reasonable justification",
+        "Adequate (5-6 pts)": "Basic application with limited depth",
+        "Poor (0-4 pts)": "Superficial or incorrect application"
+      },
+      "sampleAnswer": "A comprehensive answer should address the key principles of material properties, demonstrate understanding of its applications, and provide relevant examples.",
+      "estimatedTime": "15 minutes",
+      "tags": [
+        "material properties",
+        "apply",
+        "written-response"
+      ],
+      "id": "Q-M2-004",
+      "moduleId": 2
+    },
+    {
+      "type": "Case Study",
+      "bloomLevel": "Analyze",
+      "difficulty": "Hard",
+      "scenario": "A company is implementing practical material properties to improve their operations. They face challenges with material properties. Current metrics show suboptimal performance in key areas.",
+      "question": "Analyze the scenario and evaluate the effectiveness of their practical material properties approach. What improvements would you recommend?",
+      "rubric": {
+        "Analysis (30%)": "Depth of problem analysis and identification of key issues",
+        "Solution Quality (40%)": "Effectiveness and feasibility of proposed solution",
+        "Justification (20%)": "Quality of reasoning and evidence provided",
+        "Presentation (10%)": "Clarity and organization of response"
+      },
+      "estimatedTime": "30-45 minutes",
+      "tags": [
+        "practical material properties",
+        "analyze",
+        "case-study",
+        "applied"
+      ],
+      "id": "Q-M2-005",
+      "moduleId": 2
+    },
+    {
+      "type": "MCQ",
+      "bloomLevel": "Apply",
+      "difficulty": "Medium",
+      "question": "What is the primary purpose of real-world examples?",
+      "options": [
+        "A) Real-World Examples serves as the primary mechanism for data processing",
+        "B) It provides a framework for implementing real-world examples",
+        "C) Real-World Examples enables systematic analysis and evaluation",
+        "D) It represents an alternative approach to real-world examples"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Option C is correct because it accurately describes real-world examples.",
+      "estimatedTime": "3 minutes",
+      "tags": [
+        "real-world examples",
+        "apply"
+      ],
+      "id": "Q-M3-001",
+      "moduleId": 3
+    },
+    {
+      "type": "MCQ",
+      "bloomLevel": "Apply",
+      "difficulty": "Medium",
+      "question": "What is the primary purpose of real-world examples?",
+      "options": [
+        "A) Real-World Examples serves as the primary mechanism for data processing",
+        "B) It provides a framework for implementing real-world examples",
+        "C) Real-World Examples enables systematic analysis and evaluation",
+        "D) It represents an alternative approach to real-world examples"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Option B is correct because it accurately describes real-world examples.",
+      "estimatedTime": "3 minutes",
+      "tags": [
+        "real-world examples",
+        "apply"
+      ],
+      "id": "Q-M3-002",
+      "moduleId": 3
+    },
+    {
+      "type": "MCQ",
+      "bloomLevel": "Understand",
+      "difficulty": "Easy",
+      "question": "Describe how practical real-world examples works.",
+      "options": [
+        "A) Real-World Examples serves as the primary mechanism for data processing",
+        "B) It provides a framework for implementing real-world examples",
+        "C) Real-World Examples enables systematic analysis and evaluation",
+        "D) It represents an alternative approach to real-world examples"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Option B is correct because it accurately describes real-world examples.",
+      "estimatedTime": "2 minutes",
+      "tags": [
+        "real-world examples",
+        "understand"
+      ],
+      "id": "Q-M3-003",
+      "moduleId": 3
+    },
+    {
+      "type": "Short Answer",
+      "bloomLevel": "Analyze",
+      "difficulty": "Medium",
+      "question": "Examine the relationship between real-world examples and emphasis.",
+      "rubric": {
+        "Excellent (9-10 pts)": "Sophisticated analysis with strong justification",
+        "Good (7-8 pts)": "Solid understanding with reasonable justification",
+        "Adequate (5-6 pts)": "Basic application with limited depth",
+        "Poor (0-4 pts)": "Superficial or incorrect application"
+      },
+      "sampleAnswer": "A comprehensive answer should address the key principles of real-world examples, demonstrate understanding of its applications, and provide relevant examples.",
+      "estimatedTime": "18 minutes",
+      "tags": [
+        "real-world examples",
+        "analyze",
+        "written-response"
+      ],
+      "id": "Q-M3-004",
+      "moduleId": 3
+    },
+    {
+      "type": "Case Study",
+      "bloomLevel": "Create",
+      "difficulty": "Hard",
+      "scenario": "A company is implementing practical real-world examples to improve their operations. They face challenges with real-world examples. Current metrics show suboptimal performance in key areas.",
+      "question": "Design a comprehensive solution that addresses the challenges. Your solution should incorporate best practices in practical real-world examples.",
+      "rubric": {
+        "Analysis (30%)": "Depth of problem analysis and identification of key issues",
+        "Solution Quality (40%)": "Effectiveness and feasibility of proposed solution",
+        "Justification (20%)": "Quality of reasoning and evidence provided",
+        "Presentation (10%)": "Clarity and organization of response"
+      },
+      "estimatedTime": "30-45 minutes",
+      "tags": [
+        "practical real-world examples",
+        "create",
+        "case-study",
+        "applied"
+      ],
+      "id": "Q-M3-005",
+      "moduleId": 3
+    },
+    {
+      "type": "MCQ",
+      "bloomLevel": "Remember",
+      "difficulty": "Easy",
+      "question": "Identify the main components of applied heat transfer.",
+      "options": [
+        "A) Heat Transfer serves as the primary mechanism for data processing",
+        "B) It provides a framework for implementing heat transfer",
+        "C) Heat Transfer enables systematic analysis and evaluation",
+        "D) It represents an alternative approach to heat transfer"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Option B is correct because it accurately describes heat transfer.",
+      "estimatedTime": "2 minutes",
+      "tags": [
+        "heat transfer",
+        "remember"
+      ],
+      "id": "Q-M4-001",
+      "moduleId": 4
+    },
+    {
+      "type": "MCQ",
+      "bloomLevel": "Remember",
+      "difficulty": "Easy",
+      "question": "List the key features of applied heat transfer.",
+      "options": [
+        "A) Heat Transfer serves as the primary mechanism for data processing",
+        "B) It provides a framework for implementing heat transfer",
+        "C) Heat Transfer enables systematic analysis and evaluation",
+        "D) It represents an alternative approach to heat transfer"
+      ],
+      "correctAnswer": "B",
+      "explanation": "Option B is correct because it accurately describes heat transfer.",
+      "estimatedTime": "2 minutes",
+      "tags": [
+        "heat transfer",
+        "remember"
+      ],
+      "id": "Q-M4-002",
+      "moduleId": 4
+    },
+    {
+      "type": "MCQ",
+      "bloomLevel": "Understand",
+      "difficulty": "Easy",
+      "question": "Describe how applied heat transfer works.",
+      "options": [
+        "A) Heat Transfer serves as the primary mechanism for data processing",
+        "B) It provides a framework for implementing heat transfer",
+        "C) Heat Transfer enables systematic analysis and evaluation",
+        "D) It represents an alternative approach to heat transfer"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Option D is correct because it accurately describes heat transfer.",
+      "estimatedTime": "2 minutes",
+      "tags": [
+        "heat transfer",
+        "understand"
+      ],
+      "id": "Q-M4-003",
+      "moduleId": 4
+    },
+    {
+      "type": "Short Answer",
+      "bloomLevel": "Analyze",
+      "difficulty": "Medium",
+      "question": "Examine the relationship between heat transfer and course.",
+      "rubric": {
+        "Excellent (9-10 pts)": "Sophisticated analysis with strong justification",
+        "Good (7-8 pts)": "Solid understanding with reasonable justification",
+        "Adequate (5-6 pts)": "Basic application with limited depth",
+        "Poor (0-4 pts)": "Superficial or incorrect application"
+      },
+      "sampleAnswer": "A comprehensive answer should address the key principles of heat transfer, demonstrate understanding of its applications, and provide relevant examples.",
+      "estimatedTime": "18 minutes",
+      "tags": [
+        "heat transfer",
+        "analyze",
+        "written-response"
+      ],
+      "id": "Q-M4-004",
+      "moduleId": 4
+    },
+    {
+      "type": "Case Study",
+      "bloomLevel": "Analyze",
+      "difficulty": "Hard",
+      "scenario": "A company is implementing applied heat transfer to improve their operations. They face challenges with heat transfer. Current metrics show suboptimal performance in key areas.",
+      "question": "Analyze the scenario and evaluate the effectiveness of their applied heat transfer approach. What improvements would you recommend?",
+      "rubric": {
+        "Analysis (30%)": "Depth of problem analysis and identification of key issues",
+        "Solution Quality (40%)": "Effectiveness and feasibility of proposed solution",
+        "Justification (20%)": "Quality of reasoning and evidence provided",
+        "Presentation (10%)": "Clarity and organization of response"
+      },
+      "estimatedTime": "30-45 minutes",
+      "tags": [
+        "applied heat transfer",
+        "analyze",
+        "case-study",
+        "applied"
+      ],
+      "id": "Q-M4-005",
+      "moduleId": 4
+    },
+    {
+      "type": "MCQ",
+      "bloomLevel": "Understand",
+      "difficulty": "Easy",
+      "question": "Summarize the main principles of capstone project: fundamental concepts.",
+      "options": [
+        "A) Fundamental Concepts serves as the primary mechanism for data processing",
+        "B) It provides a framework for implementing fundamental concepts",
+        "C) Fundamental Concepts enables systematic analysis and evaluation",
+        "D) It represents an alternative approach to fundamental concepts"
+      ],
+      "correctAnswer": "D",
+      "explanation": "Option D is correct because it accurately describes fundamental concepts.",
+      "estimatedTime": "2 minutes",
+      "tags": [
+        "fundamental concepts",
+        "understand"
+      ],
+      "id": "Q-M5-001",
+      "moduleId": 5
+    },
+    {
+      "type": "MCQ",
+      "bloomLevel": "Apply",
+      "difficulty": "Medium",
+      "question": "What is the primary purpose of fundamental concepts?",
+      "options": [
+        "A) Fundamental Concepts serves as the primary mechanism for data processing",
+        "B) It provides a framework for implementing fundamental concepts",
+        "C) Fundamental Concepts enables systematic analysis and evaluation",
+        "D) It represents an alternative approach to fundamental concepts"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Option C is correct because it accurately describes fundamental concepts.",
+      "estimatedTime": "3 minutes",
+      "tags": [
+        "fundamental concepts",
+        "apply"
+      ],
+      "id": "Q-M5-002",
+      "moduleId": 5
+    },
+    {
+      "type": "MCQ",
+      "bloomLevel": "Remember",
+      "difficulty": "Easy",
+      "question": "Identify the main components of capstone project: fundamental concepts.",
+      "options": [
+        "A) Fundamental Concepts serves as the primary mechanism for data processing",
+        "B) It provides a framework for implementing fundamental concepts",
+        "C) Fundamental Concepts enables systematic analysis and evaluation",
+        "D) It represents an alternative approach to fundamental concepts"
+      ],
+      "correctAnswer": "C",
+      "explanation": "Option C is correct because it accurately describes fundamental concepts.",
+      "estimatedTime": "2 minutes",
+      "tags": [
+        "fundamental concepts",
+        "remember"
+      ],
+      "id": "Q-M5-003",
+      "moduleId": 5
+    },
+    {
+      "type": "Short Answer",
+      "bloomLevel": "Analyze",
+      "difficulty": "Medium",
+      "question": "Differentiate between fundamental concepts and prerequisites.",
+      "rubric": {
+        "Excellent (9-10 pts)": "Sophisticated analysis with strong justification",
+        "Good (7-8 pts)": "Solid understanding with reasonable justification",
+        "Adequate (5-6 pts)": "Basic application with limited depth",
+        "Poor (0-4 pts)": "Superficial or incorrect application"
+      },
+      "sampleAnswer": "A comprehensive answer should address the key principles of fundamental concepts, demonstrate understanding of its applications, and provide relevant examples.",
+      "estimatedTime": "18 minutes",
+      "tags": [
+        "fundamental concepts",
+        "analyze",
+        "written-response"
+      ],
+      "id": "Q-M5-004",
+      "moduleId": 5
+    },
+    {
+      "type": "Case Study",
+      "bloomLevel": "Analyze",
+      "difficulty": "Hard",
+      "scenario": "A company is implementing capstone project: fundamental concepts to improve their operations. They face challenges with fundamental concepts. Current metrics show suboptimal performance in key areas.",
+      "question": "Analyze the scenario and evaluate the effectiveness of their capstone project: fundamental concepts approach. What improvements would you recommend?",
+      "rubric": {
+        "Analysis (30%)": "Depth of problem analysis and identification of key issues",
+        "Solution Quality (40%)": "Effectiveness and feasibility of proposed solution",
+        "Justification (20%)": "Quality of reasoning and evidence provided",
+        "Presentation (10%)": "Clarity and organization of response"
+      },
+      "estimatedTime": "30-45 minutes",
+      "tags": [
+        "capstone project: fundamental concepts",
+        "analyze",
+        "case-study",
+        "applied"
+      ],
+      "id": "Q-M5-005",
+      "moduleId": 5
+    }
+  ],
+  "alignmentMatrix": [
+    {
+      "moduleId": 1,
+      "module": "Introduction to Engineering",
+      "learningOutcome": "Students will be able to identify key engineering",
+      "learningOutcomeId": "M1-LO1",
+      "bloomLevel": "Remember",
+      "assessmentTypes": [
+        "Quizzes",
+        "Pre-Test"
+      ],
+      "questionIds": [],
+      "coverage": "None"
+    },
+    {
+      "moduleId": 2,
+      "module": "Practical Material Properties",
+      "learningOutcome": "Students will be able to use material properties to solve problems",
+      "learningOutcomeId": "M2-LO1",
+      "bloomLevel": "Apply",
+      "assessmentTypes": [
+        "Labs/Assignments",
+        "Quizzes"
+      ],
+      "questionIds": [
+        "Q-M2-001",
+        "Q-M2-003",
+        "Q-M2-004"
+      ],
+      "coverage": "Medium"
+    },
+    {
+      "moduleId": 2,
+      "module": "Practical Material Properties",
+      "learningOutcome": "Students will be able to summarize material properties",
+      "learningOutcomeId": "M2-LO2",
+      "bloomLevel": "Understand",
+      "assessmentTypes": [
+        "Quizzes",
+        "Pre-Test"
+      ],
+      "questionIds": [],
+      "coverage": "None"
+    },
+    {
+      "moduleId": 2,
+      "module": "Practical Material Properties",
+      "learningOutcome": "Students will be able to list the main material properties",
+      "learningOutcomeId": "M2-LO3",
+      "bloomLevel": "Remember",
+      "assessmentTypes": [
+        "Quizzes",
+        "Pre-Test"
+      ],
+      "questionIds": [
+        "Q-M2-002"
+      ],
+      "coverage": "Low"
+    },
+    {
+      "moduleId": 3,
+      "module": "Practical Real-World Examples",
+      "learningOutcome": "Students will be able to implement real-world examples",
+      "learningOutcomeId": "M3-LO1",
+      "bloomLevel": "Apply",
+      "assessmentTypes": [
+        "Labs/Assignments",
+        "Quizzes"
+      ],
+      "questionIds": [
+        "Q-M3-001",
+        "Q-M3-002"
+      ],
+      "coverage": "Low"
+    },
+    {
+      "moduleId": 3,
+      "module": "Practical Real-World Examples",
+      "learningOutcome": "Students will be able to critique real-world examples",
+      "learningOutcomeId": "M3-LO2",
+      "bloomLevel": "Evaluate",
+      "assessmentTypes": [
+        "Project"
+      ],
+      "questionIds": [],
+      "coverage": "None"
+    },
+    {
+      "moduleId": 4,
+      "module": "Applied Heat Transfer",
+      "learningOutcome": "Students will be able to compare different heat transfer",
+      "learningOutcomeId": "M4-LO1",
+      "bloomLevel": "Analyze",
+      "assessmentTypes": [
+        "Labs/Assignments",
+        "Project"
+      ],
+      "questionIds": [
+        "Q-M4-004",
+        "Q-M4-005"
+      ],
+      "coverage": "Low"
+    },
+    {
+      "moduleId": 4,
+      "module": "Applied Heat Transfer",
+      "learningOutcome": "Students will be able to use heat transfer to solve problems",
+      "learningOutcomeId": "M4-LO2",
+      "bloomLevel": "Apply",
+      "assessmentTypes": [
+        "Labs/Assignments",
+        "Quizzes"
+      ],
+      "questionIds": [],
+      "coverage": "None"
+    },
+    {
+      "moduleId": 4,
+      "module": "Applied Heat Transfer",
+      "learningOutcome": "Students will be able to critique heat transfer",
+      "learningOutcomeId": "M4-LO3",
+      "bloomLevel": "Evaluate",
+      "assessmentTypes": [
+        "Project"
+      ],
+      "questionIds": [],
+      "coverage": "None"
+    },
+    {
+      "moduleId": 5,
+      "module": "Capstone Project: Fundamental Concepts",
+      "learningOutcome": "Students will be able to apply fundamental concepts to fundamental concepts",
+      "learningOutcomeId": "M5-LO1",
+      "bloomLevel": "Apply",
+      "assessmentTypes": [
+        "Labs/Assignments",
+        "Quizzes"
+      ],
+      "questionIds": [
+        "Q-M5-002"
+      ],
+      "coverage": "Low"
+    },
+    {
+      "moduleId": 5,
+      "module": "Capstone Project: Fundamental Concepts",
+      "learningOutcome": "Students will be able to develop solutions using fundamental concepts",
+      "learningOutcomeId": "M5-LO2",
+      "bloomLevel": "Create",
+      "assessmentTypes": [
+        "Project"
+      ],
+      "questionIds": [],
+      "coverage": "None"
+    },
+    {
+      "moduleId": 5,
+      "module": "Capstone Project: Fundamental Concepts",
+      "learningOutcome": "Students will be able to differentiate between fundamental concepts",
+      "learningOutcomeId": "M5-LO3",
+      "bloomLevel": "Analyze",
+      "assessmentTypes": [
+        "Labs/Assignments",
+        "Project"
+      ],
+      "questionIds": [
+        "Q-M5-004",
+        "Q-M5-005"
+      ],
+      "coverage": "Low"
+    }
+  ]
+}
