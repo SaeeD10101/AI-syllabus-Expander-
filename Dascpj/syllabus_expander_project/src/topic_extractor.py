@@ -1,221 +1,255 @@
-# topic_extractor.py
-
 import spacy
+import subprocess
+import sys
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.cluster import KMeans
-from collections import Counter
-import re
 import numpy as np
 
-# Load spaCy model
-nlp = spacy.load("en_core_web_sm")
+# Lazy loading function for spaCy model
+def load_spacy_model():
+    """Load spaCy model, download if not available"""
+    try:
+        return spacy.load("en_core_web_sm")
+    except OSError:
+        print("Downloading spaCy model 'en_core_web_sm'...")
+        subprocess.check_call([sys.executable, "-m", "spacy", "download", "en_core_web_sm"])
+        return spacy.load("en_core_web_sm")
+
+# Global variable for lazy initialization
+_nlp = None
+
+def get_nlp():
+    """Get or initialize the spaCy NLP model"""
+    global _nlp
+    if _nlp is None:
+        _nlp = load_spacy_model()
+    return _nlp
+
 
 class TopicExtractor:
-    """Extract topics and generate module structure from course description"""
+    """Extract topics from course description using NLP techniques"""
     
     def __init__(self):
-        self.stop_words = set(['course', 'student', 'students', 'learn', 'learning', 
-                               'will', 'including', 'include', 'covers', 'cover',
-                               'provides', 'provide', 'introduction', 'basic', 'fundamental'])
+        """Initialize the topic extractor with spaCy model"""
+        self.nlp = get_nlp()
     
-    def extract_keywords(self, text, top_n=15):
-        """Extract important keywords using TF-IDF"""
-        # Combine all text
-        corpus = [text]
+    def extract_keywords(self, text):
+        """
+        Extract keywords from text using noun chunks and named entities
         
-        # TF-IDF extraction
-        vectorizer = TfidfVectorizer(
-            max_features=top_n,
-            stop_words='english',
-            ngram_range=(1, 2),  # unigrams and bigrams
-            min_df=1,
-            max_df=0.8
-        )
-        
-        try:
-            tfidf_matrix = vectorizer.fit_transform(corpus)
-            feature_names = vectorizer.get_feature_names_out()
-            scores = tfidf_matrix.toarray()[0]
+        Args:
+            text (str): Input text to extract keywords from
             
-            # Get top keywords with scores
-            keyword_scores = list(zip(feature_names, scores))
-            keyword_scores.sort(key=lambda x: x[1], reverse=True)
-            
-            # Filter out stop words
-            keywords = [kw for kw, score in keyword_scores 
-                       if kw.lower() not in self.stop_words and len(kw) > 2]
-            
-            return keywords[:top_n]
-        except:
-            return self.extract_keywords_fallback(text, top_n)
-    
-    def extract_keywords_fallback(self, text, top_n=15):
-        """Fallback keyword extraction using spaCy"""
-        doc = nlp(text)
+        Returns:
+            list: List of extracted keywords
+        """
+        doc = self.nlp(text)
         
         # Extract noun chunks
         noun_chunks = [chunk.text.lower() for chunk in doc.noun_chunks]
         
-        # Count frequency
-        word_freq = Counter(noun_chunks)
+        # Extract named entities
+        entities = [ent.text.lower() for ent in doc.ents]
         
-        # Remove stop words
-        filtered = [(word, freq) for word, freq in word_freq.most_common() 
-                   if word not in self.stop_words and len(word) > 2]
+        # Combine and deduplicate
+        keywords = list(set(noun_chunks + entities))
         
-        return [word for word, freq in filtered[:top_n]]
+        return keywords
     
-    def extract_noun_phrases(self, text):
-        """Extract noun phrases using spaCy"""
-        doc = nlp(text)
-        noun_phrases = []
+    def extract_topics_tfidf(self, course_description, num_topics=6):
+        """
+        Extract topics using TF-IDF vectorization
         
-        for chunk in doc.noun_chunks:
-            # Clean and filter
-            phrase = chunk.text.lower().strip()
-            if (len(phrase.split()) <= 3 and 
-                phrase not in self.stop_words and 
-                len(phrase) > 3):
-                noun_phrases.append(phrase)
+        Args:
+            course_description (str): Course description text
+            num_topics (int): Number of topics to extract
+            
+        Returns:
+            list: List of extracted topics
+        """
+        # Process text with spaCy
+        doc = self.nlp(course_description)
         
-        return list(set(noun_phrases))
+        # Get sentences
+        sentences = [sent.text for sent in doc.sents]
+        
+        if len(sentences) < 2:
+            # If too few sentences, extract keywords directly
+            return self.extract_keywords(course_description)[:num_topics]
+        
+        # TF-IDF Vectorization
+        try:
+            vectorizer = TfidfVectorizer(
+                max_features=min(50, len(sentences) * 10),
+                stop_words='english',
+                ngram_range=(1, 3)  # Unigrams to trigrams
+            )
+            tfidf_matrix = vectorizer.fit_transform(sentences)
+            
+            # Get feature names
+            feature_names = vectorizer.get_feature_names_out()
+            
+            # Calculate mean TF-IDF scores
+            tfidf_scores = np.asarray(tfidf_matrix.mean(axis=0)).ravel()
+            
+            # Get top topics
+            top_indices = tfidf_scores.argsort()[-num_topics:][::-1]
+            topics = [feature_names[i] for i in top_indices]
+            
+            return topics
+            
+        except Exception as e:
+            print(f"TF-IDF extraction failed: {e}")
+            # Fallback to keyword extraction
+            return self.extract_keywords(course_description)[:num_topics]
     
-    def extract_entities(self, text):
-        """Extract named entities"""
-        doc = nlp(text)
-        entities = []
+    def extract_topics_clustering(self, course_description, num_topics=6):
+        """
+        Extract topics using clustering on sentence embeddings
         
-        for ent in doc.ents:
-            if ent.label_ in ['ORG', 'PRODUCT', 'GPE', 'NORP', 'FAC', 'EVENT']:
-                entities.append({
-                    'text': ent.text,
-                    'label': ent.label_
-                })
+        Args:
+            course_description (str): Course description text
+            num_topics (int): Number of topic clusters
+            
+        Returns:
+            list: List of representative topics from each cluster
+        """
+        doc = self.nlp(course_description)
+        sentences = [sent.text for sent in doc.sents]
         
-        return entities
+        if len(sentences) < num_topics:
+            return self.extract_keywords(course_description)[:num_topics]
+        
+        try:
+            # Get sentence vectors
+            sentence_vectors = [self.nlp(sent).vector for sent in sentences]
+            
+            # Cluster sentences
+            kmeans = KMeans(n_clusters=min(num_topics, len(sentences)), random_state=42)
+            kmeans.fit(sentence_vectors)
+            
+            # Extract representative keywords from each cluster
+            topics = []
+            for i in range(kmeans.n_clusters):
+                cluster_sentences = [sentences[j] for j in range(len(sentences)) if kmeans.labels_[j] == i]
+                if cluster_sentences:
+                    # Extract keywords from cluster sentences
+                    cluster_text = ' '.join(cluster_sentences)
+                    cluster_keywords = self.extract_keywords(cluster_text)
+                    if cluster_keywords:
+                        topics.append(cluster_keywords[0])
+            
+            return topics[:num_topics]
+            
+        except Exception as e:
+            print(f"Clustering extraction failed: {e}")
+            return self.extract_topics_tfidf(course_description, num_topics)
     
-    def cluster_keywords(self, keywords, n_clusters=6):
-        """Cluster keywords into potential topics"""
-        if len(keywords) < n_clusters:
-            n_clusters = len(keywords)
+    def extract_topics(self, course_description, course_title="", num_topics=6, method='tfidf'):
+        """
+        Main method to extract topics from course description
         
-        # Simple clustering based on word similarity
-        # For pure NLP, we'll use character-based similarity
-        clusters = {i: [] for i in range(n_clusters)}
+        Args:
+            course_description (str): Course description text
+            course_title (str): Course title (optional, for context)
+            num_topics (int): Number of topics to extract
+            method (str): Extraction method ('tfidf' or 'clustering')
+            
+        Returns:
+            list: List of extracted topics
+        """
+        # Combine title and description for better context
+        full_text = f"{course_title}. {course_description}"
         
-        # Distribute keywords across clusters
-        for idx, keyword in enumerate(keywords):
-            cluster_id = idx % n_clusters
-            clusters[cluster_id].append(keyword)
-        
-        return clusters
-    
-    def generate_module_title(self, keywords):
-        """Generate module title from keywords"""
-        if not keywords:
-            return "General Concepts"
-        
-        # Use first 1-2 keywords
-        main_keyword = keywords[0].title()
-        
-        # Add context
-        prefixes = ["Introduction to", "Fundamentals of", "Advanced", "Practical"]
-        suffixes = ["Concepts", "Principles", "Applications", "Techniques"]
-        
-        # Simple heuristic
-        if len(main_keyword.split()) == 1:
-            return f"{prefixes[0]} {main_keyword}"
+        if method == 'clustering':
+            topics = self.extract_topics_clustering(full_text, num_topics)
         else:
-            return main_keyword.title()
+            topics = self.extract_topics_tfidf(full_text, num_topics)
+        
+        # Clean and format topics
+        topics = [topic.strip().title() for topic in topics if topic.strip()]
+        
+        # Remove duplicates while preserving order
+        seen = set()
+        unique_topics = []
+        for topic in topics:
+            if topic.lower() not in seen:
+                seen.add(topic.lower())
+                unique_topics.append(topic)
+        
+        return unique_topics[:num_topics]
     
-    def estimate_hours(self, subtopic_count, total_duration):
-        """Estimate hours per module"""
-        # Parse duration (e.g., "12 weeks" -> 12)
-        duration_match = re.search(r'(\d+)', str(total_duration))
-        if duration_match:
-            weeks = int(duration_match.group(1))
-            total_hours = weeks * 3  # Assume 3 hours per week
-            hours_per_module = total_hours / max(subtopic_count, 1)
-            return max(4, min(12, int(hours_per_module)))
-        return 6  # Default
-    
-    def extract_topics_and_modules(self, course_title, description, scope, duration):
-        """Main method: Extract topics and generate module structure"""
+    def enrich_topics(self, topics, course_description):
+        """
+        Enrich topics with additional context from course description
         
-        # Combine all text
-        full_text = f"{course_title}. {description}. {scope}"
+        Args:
+            topics (list): List of topics
+            course_description (str): Course description
+            
+        Returns:
+            dict: Dictionary of topics with enriched information
+        """
+        enriched_topics = {}
+        doc = self.nlp(course_description)
         
-        # Step 1: Extract keywords
-        keywords = self.extract_keywords(full_text, top_n=20)
-        
-        # Step 2: Extract noun phrases
-        noun_phrases = self.extract_noun_phrases(full_text)
-        
-        # Step 3: Combine and deduplicate
-        all_topics = list(set(keywords + noun_phrases))[:15]
-        
-        # Step 4: Cluster into modules (4-8 modules)
-        n_modules = min(max(4, len(all_topics) // 3), 8)
-        clusters = self.cluster_keywords(all_topics, n_modules)
-        
-        # Step 5: Generate module structure
-        modules = []
-        for i, (cluster_id, cluster_keywords) in enumerate(clusters.items()):
-            if not cluster_keywords:
-                continue
-                
-            module = {
-                'id': i + 1,
-                'title': self.generate_module_title(cluster_keywords),
-                'subtopics': cluster_keywords[:4],  # Max 4 subtopics per module
-                'keywords': cluster_keywords,
-                'hours': self.estimate_hours(n_modules, duration)
+        for topic in topics:
+            # Find sentences mentioning this topic
+            relevant_sentences = []
+            for sent in doc.sents:
+                if topic.lower() in sent.text.lower():
+                    relevant_sentences.append(sent.text)
+            
+            enriched_topics[topic] = {
+                'name': topic,
+                'context': relevant_sentences[:2] if relevant_sentences else [],
+                'keywords': self.extract_keywords(topic)
             }
-            modules.append(module)
         
-        # Step 6: Ensure we have 4-8 modules
-        if len(modules) < 4:
-            # Add generic modules
-            while len(modules) < 4:
-                modules.append({
-                    'id': len(modules) + 1,
-                    'title': f"Additional Concepts",
-                    'subtopics': ["Related topics", "Case studies"],
-                    'keywords': [],
-                    'hours': 6
-                })
-        
-        return {
-            'modules': modules[:8],  # Max 8 modules
-            'extracted_keywords': keywords,
-            'total_topics': len(all_topics)
-        }
+        return enriched_topics
 
 
-# Test the extractor
+# Standalone function for quick topic extraction
+def extract_topics_from_text(course_description, course_title="", num_topics=6):
+    """
+    Convenience function to extract topics without instantiating the class
+    
+    Args:
+        course_description (str): Course description text
+        course_title (str): Course title (optional)
+        num_topics (int): Number of topics to extract
+        
+    Returns:
+        list: List of extracted topics
+    """
+    extractor = TopicExtractor()
+    return extractor.extract_topics(course_description, course_title, num_topics)
+
+
+# Example usage and testing
 if __name__ == "__main__":
-    import json
-    
-    # Load sample course
-    with open('synthetic_courses.json', 'r') as f:
-        courses = json.load(f)
-    
-    sample_course = courses[0]
+    # Test the topic extractor
+    sample_description = """
+    This course covers the fundamentals of machine learning including supervised learning,
+    unsupervised learning, and reinforcement learning. Students will learn about neural networks,
+    decision trees, clustering algorithms, and natural language processing. The course includes
+    hands-on projects using Python and popular ML libraries like scikit-learn and TensorFlow.
+    Topics include data preprocessing, feature engineering, model evaluation, and deployment.
+    """
     
     extractor = TopicExtractor()
-    result = extractor.extract_topics_and_modules(
-        sample_course['title'],
-        sample_course['description'],
-        sample_course['scope'],
-        sample_course['duration']
-    )
     
-    print("=" * 60)
-    print(f"COURSE: {sample_course['title']}")
-    print("=" * 60)
-    print(f"\nExtracted {len(result['modules'])} modules:")
-    print(f"Keywords found: {', '.join(result['extracted_keywords'][:10])}")
-    print("\nMODULES:")
-    for module in result['modules']:
-        print(f"\n{module['id']}. {module['title']} ({module['hours']} hours)")
-        print(f"   Subtopics: {', '.join(module['subtopics'])}")
+    print("Testing TF-IDF method:")
+    topics_tfidf = extractor.extract_topics(sample_description, method='tfidf')
+    print(topics_tfidf)
+    
+    print("\nTesting Clustering method:")
+    topics_clustering = extractor.extract_topics(sample_description, method='clustering')
+    print(topics_clustering)
+    
+    print("\nEnriched topics:")
+    enriched = extractor.enrich_topics(topics_tfidf, sample_description)
+    for topic, info in enriched.items():
+        print(f"\n{topic}:")
+        print(f"  Context: {info['context']}")
+        print(f"  Keywords: {info['keywords']}")
