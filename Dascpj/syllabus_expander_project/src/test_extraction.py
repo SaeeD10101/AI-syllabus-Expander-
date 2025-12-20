@@ -1,8 +1,8 @@
 # test_extraction.py
 
 import json
-from topic_extractor import TopicExtractor
-from module_structurer import ModuleStructurer
+from .topic_extractor import TopicExtractor
+from .module_structurer import ModuleStructurer
 
 def test_extraction_pipeline():
     """Test complete extraction and structuring pipeline"""
@@ -54,4 +54,5 @@ def test_extraction_pipeline():
         print("\n" + "-" * 80)
 
 if __name__ == "__main__":
+
     test_extraction_pipeline()
