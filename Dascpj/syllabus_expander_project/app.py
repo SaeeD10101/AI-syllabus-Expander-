@@ -4,13 +4,13 @@ from flask_cors import CORS
 import sys
 import json
 sys.path.insert(0, 'src')
-from topic_extractor import TopicExtractor
-from module_structurer import ModuleStructurer
-from outcome_generator import OutcomeGenerator
-from assessment_generator import AssessmentBlueprintGenerator
-from question_generator import QuestionGenerator
-from alignment_matrix import AlignmentMatrixGenerator
-from assessment_analyzer import AssessmentAnalyzer
+from src.topic_extractor import TopicExtractor
+from src.module_structurer import ModuleStructurer
+from src.outcome_generator import OutcomeGenerator
+from src.assessment_generator import AssessmentBlueprintGenerator
+from src.question_generator import QuestionGenerator
+from src.alignment_matrix import AlignmentMatrixGenerator
+from src.assessment_analyzer import AssessmentAnalyzer
 
 app = Flask(__name__, static_folder='web', static_url_path='')
 CORS(app)
@@ -140,6 +140,7 @@ if __name__ == '__main__':
     
 
     app.run(debug=True, host='0.0.0.0', port=5000)
+
 
 
 
