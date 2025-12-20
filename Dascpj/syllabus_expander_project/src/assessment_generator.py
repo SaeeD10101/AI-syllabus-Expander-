@@ -1,7 +1,7 @@
 # assessment_generator.py
 
 import random
-from knowledge_base import ASSESSMENT_TYPES, BLOOM_TAXONOMY
+from .knowledge_base import ASSESSMENT_TYPES, BLOOM_TAXONOMY
 
 class AssessmentBlueprintGenerator:
     """Generate assessment blueprint with weights and LO mappings"""
@@ -366,4 +366,5 @@ if __name__ == "__main__":
     for rec in blueprint['recommendations']:
         print(f"   • {rec}")
     
+
     print("\n" + "=" * 90)
