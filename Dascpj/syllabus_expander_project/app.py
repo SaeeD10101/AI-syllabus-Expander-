@@ -1,10 +1,18 @@
 # app.py - Flask Web Backend
-
+import subprocess
+import sys
 from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 import sys
 import json
+def install_spacy_model():
+    try:
+        import spacy
+        spacy.load("en_core_web_sm")
+    except:
+        subprocess.check_call([sys.executable, "-m", "spacy", "download", "en_core_web_sm"])
 
+install_spacy_model()
 sys.path.insert(0, 'src')
 from src.topic_extractor import TopicExtractor
 from src.module_structurer import ModuleStructurer
@@ -142,4 +150,5 @@ if __name__ == '__main__':
     
 
     app.run(debug=True, host='0.0.0.0', port=5000)
+
 
