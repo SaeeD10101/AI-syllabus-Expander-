@@ -1,226 +1,176 @@
-# outcome_validator.py
-
 import re
+
+# Fixed import
 from .knowledge_base import BLOOM_TAXONOMY
 
 class OutcomeValidator:
-    """Validate learning outcomes for measurability and quality"""
+    """Validate learning outcomes for quality and alignment"""
     
     def __init__(self):
-        # Collect all Bloom verbs
-        self.bloom_verbs = {}
-        for level, data in BLOOM_TAXONOMY.items():
-            self.bloom_verbs[level] = [v.lower() for v in data['verbs']]
-        
-        # All verbs combined
-        self.all_bloom_verbs = []
-        for verbs in self.bloom_verbs.values():
-            self.all_bloom_verbs.extend(verbs)
-        
-        # Non-measurable verbs to avoid
-        self.vague_verbs = ['know', 'understand', 'learn', 'appreciate', 
-                           'be aware of', 'become familiar with', 'gain knowledge']
+        self.bloom_taxonomy = BLOOM_TAXONOMY
+        self.valid_verbs = self._extract_all_verbs()
     
-    def validate_outcome(self, outcome_text):
-        """Validate a single learning outcome"""
-        issues = []
-        warnings = []
-        
-        outcome_lower = outcome_text.lower()
-        
-        # Check 1: Starts with "Students will be able to"
-        if not outcome_lower.startswith('students will be able to'):
-            issues.append("Outcome should start with 'Students will be able to'")
-        
-        # Check 2: Contains a Bloom verb
-        has_bloom_verb = any(verb in outcome_lower for verb in self.all_bloom_verbs)
-        if not has_bloom_verb:
-            issues.append("Outcome does not contain a measurable Bloom's taxonomy verb")
-        
-        # Check 3: Avoid vague verbs
-        has_vague_verb = any(verb in outcome_lower for verb in self.vague_verbs)
-        if has_vague_verb:
-            warnings.append("Outcome contains vague, non-measurable verbs")
-        
-        # Check 4: Reasonable length (10-150 characters)
-        if len(outcome_text) < 10:
-            issues.append("Outcome is too short")
-        elif len(outcome_text) > 150:
-            warnings.append("Outcome is quite long; consider simplifying")
-        
-        # Check 5: Has a clear object (noun after verb)
-        words = outcome_text.split()
-        if len(words) < 6:
-            warnings.append("Outcome may lack sufficient detail")
-        
-        return {
-            'valid': len(issues) == 0,
-            'issues': issues,
-            'warnings': warnings,
-            'outcome': outcome_text
-        }
+    def _extract_all_verbs(self):
+        """Extract all valid action verbs from Bloom's taxonomy"""
+        all_verbs = []
+        for level_data in self.bloom_taxonomy.values():
+            all_verbs.extend(level_data['verbs'])
+        return set(verb.lower() for verb in all_verbs)
     
-    def validate_all_outcomes(self, course_outcomes, modules):
-        """Validate all learning outcomes in the course"""
+    def validate_outcome(self, outcome_dict):
+        """
+        Validate a single learning outcome
         
-        results = {
-            'course_outcomes': [],
-            'module_outcomes': [],
-            'summary': {
-                'total_outcomes': 0,
-                'valid_outcomes': 0,
-                'outcomes_with_issues': 0,
-                'outcomes_with_warnings': 0
-            }
-        }
-        
-        # Validate course outcomes
-        for outcome in course_outcomes:
-            validation = self.validate_outcome(outcome['outcome'])
-            validation['id'] = outcome['id']
-            validation['bloomLevel'] = outcome['bloomLevel']
-            results['course_outcomes'].append(validation)
+        Args:
+            outcome_dict (dict): Outcome dictionary with 'outcome' and 'bloom_level'
             
-            results['summary']['total_outcomes'] += 1
-            if validation['valid']:
-                results['summary']['valid_outcomes'] += 1
-            if validation['issues']:
-                results['summary']['outcomes_with_issues'] += 1
-            if validation['warnings']:
-                results['summary']['outcomes_with_warnings'] += 1
+        Returns:
+            dict: Validation results
+        """
+        validation = {
+            'valid': True,
+            'issues': [],
+            'suggestions': []
+        }
         
-        # Validate module outcomes
-        for module in modules:
-            if 'learningOutcomes' in module:
-                for outcome in module['learningOutcomes']:
-                    validation = self.validate_outcome(outcome['outcome'])
-                    validation['moduleId'] = module['id']
-                    validation['moduleTitle'] = module['title']
-                    validation['bloomLevel'] = outcome['bloomLevel']
-                    results['module_outcomes'].append(validation)
-                    
-                    results['summary']['total_outcomes'] += 1
-                    if validation['valid']:
-                        results['summary']['valid_outcomes'] += 1
-                    if validation['issues']:
-                        results['summary']['outcomes_with_issues'] += 1
-                    if validation['warnings']:
-                        results['summary']['outcomes_with_warnings'] += 1
+        outcome_text = outcome_dict.get('outcome', '').lower()
+        bloom_level = outcome_dict.get('bloom_level', '').lower()
+        
+        # Check 1: Has action verb
+        has_verb = any(verb in outcome_text for verb in self.valid_verbs)
+        if not has_verb:
+            validation['valid'] = False
+            validation['issues'].append("No clear action verb found")
+            validation['suggestions'].append("Start with an action verb from Bloom's Taxonomy")
+        
+        # Check 2: Bloom's level matches verb
+        if bloom_level in self.bloom_taxonomy:
+            level_verbs = [v.lower() for v in self.bloom_taxonomy[bloom_level]['verbs']]
+            verb_matches = any(verb in outcome_text for verb in level_verbs)
+            if not verb_matches:
+                validation['valid'] = False
+                validation['issues'].append(f"Verb doesn't match {bloom_level} level")
+                validation['suggestions'].append(f"Use verbs like: {', '.join(level_verbs[:3])}")
+        
+        # Check 3: Measurable
+        if not self._is_measurable(outcome_text):
+            validation['suggestions'].append("Consider adding measurable criteria")
+        
+        # Check 4: Length check
+        word_count = len(outcome_text.split())
+        if word_count < 3:
+            validation['valid'] = False
+            validation['issues'].append("Outcome too short")
+        elif word_count > 25:
+            validation['suggestions'].append("Consider making outcome more concise")
+        
+        return validation
+    
+    def _is_measurable(self, outcome_text):
+        """Check if outcome contains measurable elements"""
+        measurable_indicators = [
+            'accuracy', 'correctly', 'effectively', 'efficiently',
+            'criteria', 'standard', 'demonstrate', 'produce',
+            'create', 'analyze', 'evaluate', 'compare'
+        ]
+        return any(indicator in outcome_text.lower() for indicator in measurable_indicators)
+    
+    def validate_all_outcomes(self, module_structure):
+        """
+        Validate all outcomes in module structure
+        
+        Args:
+            module_structure (dict): Complete module structure
+            
+        Returns:
+            dict: Overall validation results
+        """
+        results = {
+            'total_outcomes': 0,
+            'valid_outcomes': 0,
+            'invalid_outcomes': 0,
+            'modules': []
+        }
+        
+        for module in module_structure.get('modules', []):
+            module_results = {
+                'module_name': module.get('module_name', ''),
+                'outcomes': []
+            }
+            
+            for outcome in module.get('learning_outcomes', []):
+                validation = self.validate_outcome(outcome)
+                module_results['outcomes'].append({
+                    'outcome': outcome.get('outcome', ''),
+                    'validation': validation
+                })
+                
+                results['total_outcomes'] += 1
+                if validation['valid']:
+                    results['valid_outcomes'] += 1
+                else:
+                    results['invalid_outcomes'] += 1
+            
+            results['modules'].append(module_results)
         
         return results
     
-    def check_bloom_balance(self, statistics):
-        """Check if Bloom's taxonomy distribution is balanced"""
+    def get_validation_report(self, validation_results):
+        """
+        Generate human-readable validation report
         
-        recommendations = []
+        Args:
+            validation_results (dict): Results from validate_all_outcomes
+            
+        Returns:
+            str: Formatted report
+        """
+        report = "LEARNING OUTCOMES VALIDATION REPORT\n"
+        report += "=" * 50 + "\n\n"
         
-        # Check module-level distribution
-        module_pct = statistics['module_level']['percentages']
+        report += f"Total Outcomes: {validation_results['total_outcomes']}\n"
+        report += f"Valid: {validation_results['valid_outcomes']}\n"
+        report += f"Invalid: {validation_results['invalid_outcomes']}\n\n"
         
-        # Too much at Remember level
-        if module_pct.get('Remember', 0) > 30:
-            recommendations.append("Consider reducing 'Remember' level outcomes (currently > 30%)")
+        for module_result in validation_results['modules']:
+            report += f"\n{module_result['module_name']}\n"
+            report += "-" * len(module_result['module_name']) + "\n\n"
+            
+            for outcome_result in module_result['outcomes']:
+                validation = outcome_result['validation']
+                status = "✓" if validation['valid'] else "✗"
+                
+                report += f"{status} {outcome_result['outcome']}\n"
+                
+                if validation['issues']:
+                    report += "  Issues:\n"
+                    for issue in validation['issues']:
+                        report += f"    - {issue}\n"
+                
+                if validation['suggestions']:
+                    report += "  Suggestions:\n"
+                    for suggestion in validation['suggestions']:
+                        report += f"    - {suggestion}\n"
+                
+                report += "\n"
         
-        # Too little at Apply level
-        if module_pct.get('Apply', 0) < 15:
-            recommendations.append("Consider adding more 'Apply' level outcomes (currently < 15%)")
-        
-        # No higher-order thinking
-        higher_order = module_pct.get('Analyze', 0) + module_pct.get('Evaluate', 0) + module_pct.get('Create', 0)
-        if higher_order < 20:
-            recommendations.append("Consider adding more higher-order outcomes (Analyze/Evaluate/Create)")
-        
-        return {
-            'balanced': len(recommendations) == 0,
-            'recommendations': recommendations
-        }
+        return report
 
 
-# Test validator
-if __name__ == "__main__":
-    import json
-    from topic_extractor import TopicExtractor
-    from module_structurer import ModuleStructurer
-    from outcome_generator import LearningOutcomeGenerator
-    
-    # Load and process sample course
-    with open('synthetic_courses.json', 'r') as f:
-        courses = json.load(f)
-    
-    sample_course = courses[0]
-    
-    # Generate complete structure
-    extractor = TopicExtractor()
-    extraction = extractor.extract_topics_and_modules(
-        sample_course['title'],
-        sample_course['description'],
-        sample_course['scope'],
-        sample_course['duration']
-    )
-    
-    structurer = ModuleStructurer()
-    structured = structurer.structure_complete_outline(
-        extraction['modules'],
-        extraction['extracted_keywords']
-    )
-    
-    outcome_gen = LearningOutcomeGenerator()
-    result = outcome_gen.generate_complete_outcomes(
-        structured['modules'],
-        sample_course['title'],
-        structured['course_type']
-    )
-    
-    # Validate outcomes
+# Standalone function
+def validate_learning_outcomes(module_structure):
+    """Convenience function to validate outcomes"""
     validator = OutcomeValidator()
-    validation_results = validator.validate_all_outcomes(
-        result['courseLearningOutcomes'],
-        result['modules']
-    )
-    
-    # Check balance
-    balance_check = validator.check_bloom_balance(result['statistics'])
-    
-    # Display validation results
-    print("=" * 80)
-    print("LEARNING OUTCOME VALIDATION REPORT")
-    print("=" * 80)
-    
-    print(f"\n📊 SUMMARY:")
-    print(f"   Total Outcomes: {validation_results['summary']['total_outcomes']}")
-    print(f"   Valid Outcomes: {validation_results['summary']['valid_outcomes']}")
-    print(f"   With Issues: {validation_results['summary']['outcomes_with_issues']}")
-    print(f"   With Warnings: {validation_results['summary']['outcomes_with_warnings']}")
-    
-    print(f"\n✓ Validation Success Rate: {validation_results['summary']['valid_outcomes'] / validation_results['summary']['total_outcomes'] * 100:.1f}%")
-    
-    if not balance_check['balanced']:
-        print(f"\n⚠️  BLOOM'S TAXONOMY BALANCE RECOMMENDATIONS:")
-        for rec in balance_check['recommendations']:
-            print(f"   • {rec}")
-    else:
-        print(f"\n✅ Bloom's taxonomy distribution is well-balanced!")
-    
-    # Show any issues
-    print(f"\n" + "=" * 80)
-    print("DETAILED VALIDATION RESULTS:")
-    print("=" * 80)
-    
-    if validation_results['summary']['outcomes_with_issues'] > 0:
-        print("\n❌ OUTCOMES WITH ISSUES:")
-        for outcome in validation_results['course_outcomes'] + validation_results['module_outcomes']:
-            if outcome['issues']:
-                print(f"\n   Outcome: {outcome['outcome']}")
-                for issue in outcome['issues']:
-                    print(f"      ❌ {issue}")
-    
-    if validation_results['summary']['outcomes_with_warnings'] > 0:
-        print("\n⚠️  OUTCOMES WITH WARNINGS:")
-        for outcome in validation_results['course_outcomes'] + validation_results['module_outcomes']:
-            if outcome['warnings']:
-                print(f"\n   Outcome: {outcome['outcome']}")
-                for warning in outcome['warnings']:
-                    print(f"      ⚠️  {warning}")
-    
+    return validator.validate_all_outcomes(module_structure)
 
-    print("\n" + "=" * 80)
+
+if __name__ == "__main__":
+    # Test validation
+    sample_outcome = {
+        'outcome': 'Understand machine learning concepts',
+        'bloom_level': 'understand'
+    }
+    
+    validator = OutcomeValidator()
+    result = validator.validate_outcome(sample_outcome)
+    print(result)
