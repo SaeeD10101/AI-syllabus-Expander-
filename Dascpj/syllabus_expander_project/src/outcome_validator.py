@@ -1,7 +1,7 @@
 # outcome_validator.py
 
 import re
-from knowledge_base import BLOOM_TAXONOMY
+from .knowledge_base import BLOOM_TAXONOMY
 
 class OutcomeValidator:
     """Validate learning outcomes for measurability and quality"""
@@ -222,4 +222,5 @@ if __name__ == "__main__":
                 for warning in outcome['warnings']:
                     print(f"      ⚠️  {warning}")
     
+
     print("\n" + "=" * 80)
