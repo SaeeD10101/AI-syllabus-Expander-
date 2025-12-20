@@ -1,7 +1,7 @@
 # question_generator.py
 
 import random
-from knowledge_base import BLOOM_TAXONOMY
+from .knowledge_base import BLOOM_TAXONOMY
 
 class QuestionGenerator:
     """Generate sample assessment questions across Bloom's taxonomy levels"""
@@ -416,4 +416,5 @@ if __name__ == "__main__":
             for criteria, desc in q['rubric'].items():
                 print(f"   {criteria}: {desc}")
         
+
         print("-" * 90)
