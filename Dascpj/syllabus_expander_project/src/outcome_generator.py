@@ -1,7 +1,7 @@
 # src/outcome_generator.py - FIXED VERSION
 
 import random
-from knowledge_base import BLOOM_TAXONOMY
+from .knowledge_base import BLOOM_TAXONOMY
 import re
 
 class LearningOutcomeGenerator:
@@ -417,4 +417,5 @@ if __name__ == "__main__":
     
     print("\n" + "="*80)
     print("✅ TEST COMPLETE")
+
     print("="*80)
