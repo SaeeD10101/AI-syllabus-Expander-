@@ -5,37 +5,101 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.cluster import KMeans
 import numpy as np
 
-# Lazy loading function for spaCy model
-def load_spacy_model():
-    """Load spaCy model, download if not available"""
-    try:
-        return spacy.load("en_core_web_sm")
-    except OSError:
-        print("Downloading spaCy model 'en_core_web_sm'...")
-        subprocess.check_call([sys.executable, "-m", "spacy", "download", "en_core_web_sm"])
-        return spacy.load("en_core_web_sm")
-
 # Global variable for lazy initialization
 _nlp = None
+_model_available = False
+
+def check_model_available():
+    """Check if spaCy model is available without downloading"""
+    try:
+        spacy.load("en_core_web_sm")
+        return True
+    except OSError:
+        return False
+
+def download_spacy_model():
+    """Download spaCy model - call this explicitly when needed"""
+    try:
+        print("Downloading spaCy model 'en_core_web_sm'...")
+        subprocess.check_call([sys.executable, "-m", "spacy", "download", "en_core_web_sm"])
+        return True
+    except Exception as e:
+        print(f"Failed to download spaCy model: {e}")
+        return False
 
 def get_nlp():
     """Get or initialize the spaCy NLP model"""
-    global _nlp
+    global _nlp, _model_available
+    
     if _nlp is None:
-        _nlp = load_spacy_model()
+        try:
+            _nlp = spacy.load("en_core_web_sm")
+            _model_available = True
+        except OSError:
+            print("Warning: spaCy model 'en_core_web_sm' not found.")
+            print("Please run: python -m spacy download en_core_web_sm")
+            _model_available = False
+            # Return a blank spaCy model as fallback
+            _nlp = spacy.blank("en")
+    
     return _nlp
 
 
 class TopicExtractor:
     """Extract topics from course description using NLP techniques"""
     
-    def __init__(self):
-        """Initialize the topic extractor with spaCy model"""
-        self.nlp = get_nlp()
+    def __init__(self, skip_spacy=False):
+        """
+        Initialize the topic extractor
+        
+        Args:
+            skip_spacy (bool): If True, use basic text processing instead of spaCy
+        """
+        self.skip_spacy = skip_spacy
+        if not skip_spacy:
+            self.nlp = get_nlp()
+            self.model_available = _model_available
+        else:
+            self.nlp = None
+            self.model_available = False
+    
+    def extract_keywords_basic(self, text):
+        """
+        Extract keywords using basic text processing (no spaCy required)
+        
+        Args:
+            text (str): Input text
+            
+        Returns:
+            list: List of keywords
+        """
+        import re
+        
+        # Remove special characters and split
+        words = re.findall(r'\b[a-zA-Z]{3,}\b', text.lower())
+        
+        # Common stop words
+        stop_words = {
+            'the', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for',
+            'of', 'with', 'by', 'from', 'as', 'is', 'was', 'are', 'were', 'been',
+            'be', 'have', 'has', 'had', 'do', 'does', 'did', 'will', 'would',
+            'should', 'could', 'may', 'might', 'must', 'can', 'this', 'that',
+            'these', 'those', 'such', 'very', 'also', 'just', 'more', 'most'
+        }
+        
+        # Filter stop words
+        keywords = [w for w in words if w not in stop_words]
+        
+        # Count frequency
+        from collections import Counter
+        word_freq = Counter(keywords)
+        
+        # Return top keywords
+        return [word for word, _ in word_freq.most_common(20)]
     
     def extract_keywords(self, text):
         """
-        Extract keywords from text using noun chunks and named entities
+        Extract keywords from text
         
         Args:
             text (str): Input text to extract keywords from
@@ -43,6 +107,10 @@ class TopicExtractor:
         Returns:
             list: List of extracted keywords
         """
+        # Fallback to basic extraction if spaCy not available
+        if not self.model_available or self.skip_spacy:
+            return self.extract_keywords_basic(text)
+        
         doc = self.nlp(text)
         
         # Extract noun chunks
@@ -67,14 +135,17 @@ class TopicExtractor:
         Returns:
             list: List of extracted topics
         """
-        # Process text with spaCy
-        doc = self.nlp(course_description)
-        
-        # Get sentences
-        sentences = [sent.text for sent in doc.sents]
+        # Split into sentences (basic splitting if spaCy unavailable)
+        if self.model_available and not self.skip_spacy:
+            doc = self.nlp(course_description)
+            sentences = [sent.text for sent in doc.sents]
+        else:
+            # Basic sentence splitting
+            import re
+            sentences = re.split(r'[.!?]+', course_description)
+            sentences = [s.strip() for s in sentences if s.strip()]
         
         if len(sentences) < 2:
-            # If too few sentences, extract keywords directly
             return self.extract_keywords(course_description)[:num_topics]
         
         # TF-IDF Vectorization
@@ -82,7 +153,7 @@ class TopicExtractor:
             vectorizer = TfidfVectorizer(
                 max_features=min(50, len(sentences) * 10),
                 stop_words='english',
-                ngram_range=(1, 3)  # Unigrams to trigrams
+                ngram_range=(1, 3)
             )
             tfidf_matrix = vectorizer.fit_transform(sentences)
             
@@ -100,12 +171,11 @@ class TopicExtractor:
             
         except Exception as e:
             print(f"TF-IDF extraction failed: {e}")
-            # Fallback to keyword extraction
             return self.extract_keywords(course_description)[:num_topics]
     
     def extract_topics_clustering(self, course_description, num_topics=6):
         """
-        Extract topics using clustering on sentence embeddings
+        Extract topics using clustering
         
         Args:
             course_description (str): Course description text
@@ -114,6 +184,10 @@ class TopicExtractor:
         Returns:
             list: List of representative topics from each cluster
         """
+        # Only use clustering if spaCy model is available (for vectors)
+        if not self.model_available or self.skip_spacy:
+            return self.extract_topics_tfidf(course_description, num_topics)
+        
         doc = self.nlp(course_description)
         sentences = [sent.text for sent in doc.sents]
         
@@ -133,7 +207,6 @@ class TopicExtractor:
             for i in range(kmeans.n_clusters):
                 cluster_sentences = [sentences[j] for j in range(len(sentences)) if kmeans.labels_[j] == i]
                 if cluster_sentences:
-                    # Extract keywords from cluster sentences
                     cluster_text = ' '.join(cluster_sentences)
                     cluster_keywords = self.extract_keywords(cluster_text)
                     if cluster_keywords:
@@ -181,7 +254,7 @@ class TopicExtractor:
     
     def enrich_topics(self, topics, course_description):
         """
-        Enrich topics with additional context from course description
+        Enrich topics with additional context
         
         Args:
             topics (list): List of topics
@@ -191,14 +264,22 @@ class TopicExtractor:
             dict: Dictionary of topics with enriched information
         """
         enriched_topics = {}
-        doc = self.nlp(course_description)
+        
+        if self.model_available and not self.skip_spacy:
+            doc = self.nlp(course_description)
+            sentences = list(doc.sents)
+        else:
+            import re
+            sentences = re.split(r'[.!?]+', course_description)
+            sentences = [s.strip() for s in sentences if s.strip()]
         
         for topic in topics:
             # Find sentences mentioning this topic
             relevant_sentences = []
-            for sent in doc.sents:
-                if topic.lower() in sent.text.lower():
-                    relevant_sentences.append(sent.text)
+            for sent in sentences:
+                sent_text = sent.text if hasattr(sent, 'text') else sent
+                if topic.lower() in sent_text.lower():
+                    relevant_sentences.append(sent_text)
             
             enriched_topics[topic] = {
                 'name': topic,
@@ -213,43 +294,18 @@ class TopicExtractor:
 def extract_topics_from_text(course_description, course_title="", num_topics=6):
     """
     Convenience function to extract topics without instantiating the class
-    
-    Args:
-        course_description (str): Course description text
-        course_title (str): Course title (optional)
-        num_topics (int): Number of topics to extract
-        
-    Returns:
-        list: List of extracted topics
     """
-    extractor = TopicExtractor()
+    extractor = TopicExtractor(skip_spacy=not check_model_available())
     return extractor.extract_topics(course_description, course_title, num_topics)
 
 
-# Example usage and testing
 if __name__ == "__main__":
     # Test the topic extractor
     sample_description = """
     This course covers the fundamentals of machine learning including supervised learning,
-    unsupervised learning, and reinforcement learning. Students will learn about neural networks,
-    decision trees, clustering algorithms, and natural language processing. The course includes
-    hands-on projects using Python and popular ML libraries like scikit-learn and TensorFlow.
-    Topics include data preprocessing, feature engineering, model evaluation, and deployment.
+    unsupervised learning, and reinforcement learning.
     """
     
     extractor = TopicExtractor()
-    
-    print("Testing TF-IDF method:")
-    topics_tfidf = extractor.extract_topics(sample_description, method='tfidf')
-    print(topics_tfidf)
-    
-    print("\nTesting Clustering method:")
-    topics_clustering = extractor.extract_topics(sample_description, method='clustering')
-    print(topics_clustering)
-    
-    print("\nEnriched topics:")
-    enriched = extractor.enrich_topics(topics_tfidf, sample_description)
-    for topic, info in enriched.items():
-        print(f"\n{topic}:")
-        print(f"  Context: {info['context']}")
-        print(f"  Keywords: {info['keywords']}")
+    topics = extractor.extract_topics(sample_description)
+    print(topics)
