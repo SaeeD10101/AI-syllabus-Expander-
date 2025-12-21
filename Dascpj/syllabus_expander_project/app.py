@@ -32,8 +32,54 @@ print("All components initialized successfully!")
 
 @app.route('/')
 def index():
-    """Render the main page"""
-    return render_template('index.html')
+    """Main page - return API information"""
+    return jsonify({
+        'status': 'running',
+        'message': '🎓 AI Syllabus Generator API is live!',
+        'version': '1.0.0',
+        'endpoints': {
+            'generate_syllabus': {
+                'path': '/api/generate-syllabus',
+                'method': 'POST',
+                'description': 'Generate complete syllabus from course description'
+            },
+            'extract_topics': {
+                'path': '/api/extract-topics',
+                'method': 'POST',
+                'description': 'Extract topics from course description'
+            },
+            'validate_outcomes': {
+                'path': '/api/validate-outcomes',
+                'method': 'POST',
+                'description': 'Validate learning outcomes'
+            },
+            'export_text': {
+                'path': '/api/export/text',
+                'method': 'POST',
+                'description': 'Export syllabus as plain text'
+            },
+            'export_json': {
+                'path': '/api/export/json',
+                'method': 'POST',
+                'description': 'Export syllabus as JSON'
+            },
+            'health': {
+                'path': '/api/health',
+                'method': 'GET',
+                'description': 'Check system health'
+            }
+        },
+        'example_request': {
+            'url': '/api/generate-syllabus',
+            'method': 'POST',
+            'body': {
+                'course_title': 'Introduction to Machine Learning',
+                'course_description': 'This course covers supervised learning, unsupervised learning, and neural networks.',
+                'num_modules': 4,
+                'outcomes_per_topic': 2
+            }
+        }
+    })
 
 
 @app.route('/api/generate-syllabus', methods=['POST'])
