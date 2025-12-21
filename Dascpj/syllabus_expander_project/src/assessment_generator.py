@@ -3,7 +3,7 @@
 import random
 from .knowledge_base import ASSESSMENT_TYPES, BLOOM_TAXONOMY
 
-class AssessmentBlueprintGenerator:
+class AssessmentGenerator:
     """Generate assessment blueprint with weights and LO mappings"""
     
     def __init__(self):
@@ -368,3 +368,4 @@ if __name__ == "__main__":
     
 
     print("\n" + "=" * 90)
+
